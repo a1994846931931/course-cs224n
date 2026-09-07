@@ -1,8 +1,7 @@
 # CS224N · Natural Language Processing with Deep Learning
 
 > **非官方学习归档。** 不是斯坦福或 CS224N 课程组的发布。  
-> 幻灯片、作业、论文的版权仍归原作者；本仓库只整理了目录和说明。  
-> 详见 [NOTICE.md](NOTICE.md)。公开到 GitHub 前请先读该文件：声明**不能**代替授权，**不建议**公开本学期作业包。
+> 幻灯片、作业、论文的版权仍归原作者；本仓库只整理了目录和中文说明。详见 [NOTICE.md](NOTICE.md)。
 
 斯坦福大学 **Winter 2026** 课程资料镜像（从[课程官网](https://web.stanford.edu/class/cs224n/)公开链接下载）。
 
@@ -94,5 +93,5 @@ Wn.m-.../
 - 公开录像可看 [2024 YouTube playlist](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D)。
 - 作业每年会改，官网明确要求不要做往年作业。
 - 重新同步可用 `_build_course.py`（已下载的文件会跳过）。
-- 版权、第三方材料、AI 生成范围见 [NOTICE.md](NOTICE.md)。
+- 版权与来源见 [NOTICE.md](NOTICE.md)。
 

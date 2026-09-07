@@ -54,24 +54,15 @@ This repository is **not** an official Stanford, CS224N, or paper-author release
 
 ---
 
-## 3. AI 生成说明
+## 3. 整理说明
 
-目录规划、中文课程描述、README、归档脚本由 **AI 编程助手（Cursor / 对话模型）** 根据课程官网生成，维护者做了组织与核对，但：
-
-- 中文标题与课程描述可能有不准确或过时之处
-- 不保证与课堂讲授完全一致
-- 生成内容如有错误，以官网与教师材料为准
-
-AI 辅助**不改变** A、B 类材料的版权归属。
+目录结构、中文标题、各讲 README 与归档脚本由维护者整理，可能有不准确或过时之处。课件、论文与作业正文仍以官网和原作者材料为准。整理层**不改变** A、B 类材料的版权归属。
 
 ---
 
 ## 4. 学术诚信
 
-CS224N 要求独立完成作业，禁止对照网上解答。官网写明作业每年会改，**不要做往年作业**。
-
-若将本仓库**公开**：作业代码包（`04-assignment-作业/`）可能被用于作弊，也更可能被课程组或 GitHub 要求删除。  
-**强烈建议：公开仓库不要包含作业 zip/pdf；个人存档请用私有仓库。**
+CS224N 要求独立完成作业，禁止对照网上解答。官网写明作业每年会改，**不要做往年作业**。本仓库中的作业材料仅供对照课程安排，请勿用于提交或分享解答。
 
 ---
 
@@ -85,4 +76,4 @@ CS224N 要求独立完成作业，禁止对照网上解答。官网写明作业�
 
 ## 6. English summary
 
-Unofficial personal archive of publicly posted CS224N Winter 2026 materials. Course slides, notes, assignments, and project handouts remain copyright Stanford and the instructors; papers remain copyright their authors. Only the folder layout, README text, and archival scripts are original to this repo (see `LICENSE`). Downloaded from the public course site and listed paper URLs. READMEs and scripts were AI-assisted. This notice does not authorize redistribution. Prefer a **private** repo; do not publish current assignment packages.
+Unofficial personal archive of publicly posted CS224N Winter 2026 materials. Course slides, notes, assignments, and project handouts remain copyright Stanford and the instructors; papers remain copyright their authors. Only the folder layout, README text, and archival scripts are original to this repo (see `LICENSE`). Downloaded from the public course site and listed paper URLs. This notice does not authorize redistribution. Assignments are for personal study; do not use them to submit work or share solutions.
