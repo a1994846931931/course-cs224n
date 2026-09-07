@@ -1,0 +1,789 @@
+[
+  {
+    "url": "https://web.stanford.edu/class/cs224n/office_hours.html",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/office-hours-答疑时间.html",
+    "status": "ok",
+    "bytes": 10533
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project.html",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/project-期末项目页面.html",
+    "status": "ok",
+    "bytes": 70282
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/cs224n-2026-课程主页.html",
+    "status": "ok",
+    "bytes": 63891
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/style.css",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/style.css",
+    "status": "ok",
+    "bytes": 4874
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/custom-final-project-tips.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/custom-final-project-tips-自选项目建议.pdf",
+    "status": "ok",
+    "bytes": 74142
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project_w25/CS_224n__Default_Final_Project__Build_GPT_2.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/Default-Final-Project-Build-GPT2-默认项目实现GPT2.pdf",
+    "status": "ok",
+    "bytes": 979208
+  },
+  {
+    "url": "https://www.amacad.org/publication/daedalus/human-language-understanding-reasoning",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.1-Tue-Jan-06-History-of-NLP-NLP历史/03-readings-阅读材料/Human-Language-Understanding-and-Reasoning-人类语言理解与推理.html",
+    "status": "fail",
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "url": "https://web.archive.org/web/20250114002202/http://ciml.info/dl/v0_99/ciml-v0_99-all.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/参考书-Reference-Texts/Daume-A-Course-in-Machine-Learning-机器学习课程.pdf",
+    "status": "ok",
+    "bytes": 3921784
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a1.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.1-Tue-Jan-06-History-of-NLP-NLP历史/04-assignment-作业/a1-code-作业1代码-词向量入门.zip",
+    "status": "ok",
+    "bytes": 92860
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture01-history.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.1-Tue-Jan-06-History-of-NLP-NLP历史/01-slides-幻灯片/cs224n-2026-lecture01-history-NLP历史.pdf",
+    "status": "ok",
+    "bytes": 7276936
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/cs224n_winter2023_lecture1_notes_draft.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/02-notes-讲义/cs224n-notes-wordvecs-1-词向量讲义1.pdf",
+    "status": "ok",
+    "bytes": 216720
+  },
+  {
+    "url": "https://arxiv.org/pdf/1301.3781.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/1301.3781-word2vec-词向量空间中的高效表示估计.pdf",
+    "status": "ok",
+    "bytes": 228716
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes02-wordvecs2.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/02-notes-讲义/cs224n-notes-wordvecs-2-词向量讲义2.pdf",
+    "status": "ok",
+    "bytes": 483912
+  },
+  {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/nips2013-word2vec-negative-sampling-词与短语的分布式表示.pdf",
+    "status": "ok",
+    "bytes": 111997
+  },
+  {
+    "url": "https://github.com/jacobeisenstein/gt-nlp-class/raw/master/notes/eisenstein-nlp-notes.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/参考书-Reference-Texts/Eisenstein-Natural-Language-Processing-自然语言处理.pdf",
+    "status": "ok",
+    "bytes": 3359237
+  },
+  {
+    "url": "https://nlp.stanford.edu/pubs/glove.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/glove-全局词向量.pdf",
+    "status": "ok",
+    "bytes": 2618397
+  },
+  {
+    "url": "https://aclanthology.org/D15-1036.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/D15-1036-Evaluation-methods-for-unsupervised-word-embeddings-无监督词嵌入评估.pdf",
+    "status": "ok",
+    "bytes": 286775
+  },
+  {
+    "url": "https://aclanthology.org/Q15-1016.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/Q15-1016-Improving-Distributional-Similarity-改进分布相似性.pdf",
+    "status": "ok",
+    "bytes": 291108
+  },
+  {
+    "url": "https://aclanthology.org/Q16-1028.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/Q16-1028-PMI-based-Word-Embeddings-基于PMI的词嵌入潜变量模型.pdf",
+    "status": "ok",
+    "bytes": 1488286
+  },
+  {
+    "url": "https://aclanthology.org/Q16-1013.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/Q16-1013-Linear-Algebraic-Structure-of-Word-Senses-词义的线性代数结构.pdf",
+    "status": "ok",
+    "bytes": 390083
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture01-intro.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.1-Tue-Jan-06-History-of-NLP-NLP历史/01-slides-幻灯片/cs224n-2026-lecture01-intro-课程介绍.pdf",
+    "status": "ok",
+    "bytes": 6149747
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w25/2024 CS224N Python Review Session Slides.pptx.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.3-Fri-Jan-09-Python-Review-Python复习课/01-slides-幻灯片/2024-CS224N-Python-Review-Python复习课幻灯片.pdf",
+    "status": "ok",
+    "bytes": 1268264
+  },
+  {
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2018/file/b3ba1471b12382fa4ddca4d277afd544-Paper.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/03-readings-阅读材料/nips2018-dimensionality-of-word-embedding-词嵌入的维度.pdf",
+    "status": "fail",
+    "error": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/02-notes-讲义/cs224n-notes-neuralnets-神经网络讲义.pdf",
+    "status": "ok",
+    "bytes": 598646
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/review-differential-calculus.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/02-notes-讲义/review-differential-calculus-微分复习.pdf",
+    "status": "ok",
+    "bytes": 142299
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/02-notes-讲义/gradient-notes-矩阵微积分笔记.pdf",
+    "status": "ok",
+    "bytes": 202706
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture03-neuralnets.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/01-slides-幻灯片/cs224n-2026-lecture03-neuralnets-神经网络基础.pdf",
+    "status": "ok",
+    "bytes": 3294375
+  },
+  {
+    "url": "https://cs231n.github.io/neural-networks-1/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/CS231n-neural-networks-1-网络结构笔记.html",
+    "status": "ok",
+    "bytes": 42530
+  },
+  {
+    "url": "https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/Karpathy-Yes-you-should-understand-backprop-你应该理解反向传播.html",
+    "status": "fail",
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "url": "https://cs231n.stanford.edu/handouts/derivatives.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/CS231n-derivatives-导数反向传播与向量化.pdf",
+    "status": "ok",
+    "bytes": 205897
+  },
+  {
+    "url": "https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/Rumelhart-1986-backprop-用反向传播学习表示.pdf",
+    "actual": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/Rumelhart-1986-backprop-用反向传播学习表示.html",
+    "status": "html-fallback",
+    "bytes": 4485
+  },
+  {
+    "url": "https://cs231n.github.io/optimization-2/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/CS231n-optimization-2-反向传播笔记.html",
+    "status": "ok",
+    "bytes": 59389
+  },
+  {
+    "url": "https://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/03-readings-阅读材料/Collobert-2011-NLP-almost-from-scratch-几乎从零开始的NLP.pdf",
+    "status": "ok",
+    "bytes": 424780
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a2.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/04-assignment-作业/a2-handout-作业2说明.pdf",
+    "status": "ok",
+    "bytes": 507426
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a2_tex.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/04-assignment-作业/a2-latex-作业2LaTeX模板.zip",
+    "status": "ok",
+    "bytes": 450538
+  },
+  {
+    "url": "https://arxiv.org/pdf/1211.5063.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.2-Thu-Jan-15-RNNs-语言模型与RNN/03-readings-阅读材料/1211.5063-difficulty-of-training-RNNs-训练RNN的困难.pdf",
+    "status": "ok",
+    "bytes": 625611
+  },
+  {
+    "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1174/lectures/vanishing_grad_example.html",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.2-Thu-Jan-15-RNNs-语言模型与RNN/03-readings-阅读材料/vanishing-grad-example-梯度消失演示.html",
+    "status": "ok",
+    "bytes": 571909
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes05-LM_RNN.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.2-Thu-Jan-15-RNNs-语言模型与RNN/02-notes-讲义/cs224n-notes-LM-RNN-语言模型与RNN讲义.pdf",
+    "status": "ok",
+    "bytes": 1491300
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture05-transformers.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/01-slides-幻灯片/cs224n-2026-lecture05-transformers-Transformer.pdf",
+    "status": "ok",
+    "bytes": 2370926
+  },
+  {
+    "url": "https://arxiv.org/pdf/1706.03762.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.2-Thu-Jan-15-RNNs-语言模型与RNN/03-readings-阅读材料/1706.03762-Attention-Is-All-You-Need-注意力机制即所需.pdf",
+    "status": "ok",
+    "bytes": 2215244
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/readings/cs224n-self-attention-transformers-2023_draft.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/02-notes-讲义/cs224n-notes-self-attention-transformers-自注意力与Transformer讲义.pdf",
+    "status": "ok",
+    "bytes": 2319259
+  },
+  {
+    "url": "https://arxiv.org/pdf/1706.03762.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/1706.03762-Attention-Is-All-You-Need-注意力机制即所需.pdf",
+    "status": "ok",
+    "bytes": 2215244
+  },
+  {
+    "url": "https://jalammar.github.io/illustrated-transformer/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/Illustrated-Transformer-图解Transformer.html",
+    "status": "ok",
+    "bytes": 47552
+  },
+  {
+    "url": "https://arxiv.org/pdf/1607.06450.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/1607.06450-Layer-Normalization-层归一化.pdf",
+    "status": "ok",
+    "bytes": 612446
+  },
+  {
+    "url": "https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/Google-AI-blog-Transformer-新型神经网络.html",
+    "status": "ok",
+    "bytes": 171829
+  },
+  {
+    "url": "https://arxiv.org/pdf/1802.05751.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/1802.05751-Image-Transformer-图像Transformer.pdf",
+    "status": "ok",
+    "bytes": 1108088
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture04-rnnlm.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.2-Thu-Jan-15-RNNs-语言模型与RNN/01-slides-幻灯片/cs224n-2026-lecture04-rnnlm-语言模型与RNN.pdf",
+    "status": "ok",
+    "bytes": 2795715
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture02-wordvecs.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W1.2-Thu-Jan-08-Word-Vectors-词向量/01-slides-幻灯片/cs224n-2026-lecture02-wordvecs-词向量.pdf",
+    "status": "ok",
+    "bytes": 2816749
+  },
+  {
+    "url": "https://arxiv.org/pdf/1809.04281.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/1809.04281-Music-Transformer-音乐Transformer.pdf",
+    "status": "ok",
+    "bytes": 1008910
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/custom-final-project-tips.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/02-notes-讲义/custom-final-project-tips-自选项目建议.pdf",
+    "status": "ok",
+    "bytes": 74142
+  },
+  {
+    "url": "https://www.deeplearningbook.org/contents/guidelines.html",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/03-readings-阅读材料/Deep-Learning-Book-Practical-Methodology-实践方法论.html",
+    "status": "ok",
+    "bytes": 881627
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a3.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/04-assignment-作业/a3-code-作业3代码-Self-Attention与Transformer.zip",
+    "status": "ok",
+    "bytes": 267809
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a3.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/04-assignment-作业/a3-handout-作业3说明.pdf",
+    "status": "ok",
+    "bytes": 256140
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a3_tex.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/04-assignment-作业/a3-latex-作业3LaTeX模板.zip",
+    "status": "ok",
+    "bytes": 158968
+  },
+  {
+    "url": "https://web.stanford.edu/~jurafsky/slp3/9.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.1-Tue-Jan-20-Transformers-Transformer/03-readings-阅读材料/Jurafsky-Martin-SLP3-ch09-Transformer章节.pdf",
+    "status": "ok",
+    "bytes": 476715
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture06-final-project.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W3.2-Thu-Jan-22-Final-Projects-期末项目指导/01-slides-幻灯片/cs224n-2026-lecture06-final-project-期末项目实践建议.pdf",
+    "status": "ok",
+    "bytes": 3448290
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture07-pretraining.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/01-slides-幻灯片/cs224n-2026-lecture07-pretraining-预训练.pdf",
+    "status": "ok",
+    "bytes": 3186931
+  },
+  {
+    "url": "https://arxiv.org/pdf/1902.06006.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/03-readings-阅读材料/1902.06006-Contextual-Word-Representations-上下文词表示导论.pdf",
+    "status": "ok",
+    "bytes": 299109
+  },
+  {
+    "url": "https://jalammar.github.io/illustrated-bert/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/03-readings-阅读材料/Illustrated-BERT-ELMo-图解BERT与ELMo.html",
+    "status": "ok",
+    "bytes": 35149
+  },
+  {
+    "url": "https://arxiv.org/pdf/1810.04805.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/03-readings-阅读材料/1810.04805-BERT-深度双向Transformer预训练.pdf",
+    "status": "ok",
+    "bytes": 775166
+  },
+  {
+    "url": "https://openai.com/research/instruction-following",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/03-readings-阅读材料/OpenAI-InstructGPT-让语言模型遵循指令.html",
+    "status": "fail",
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "url": "https://web.stanford.edu/~jurafsky/slp3/10.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/03-readings-阅读材料/Jurafsky-Martin-SLP3-ch10-掩码语言模型.pdf",
+    "status": "ok",
+    "bytes": 1077948
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture08-posttraining.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/01-slides-幻灯片/cs224n-2026-lecture08-posttraining-后训练.pdf",
+    "status": "ok",
+    "bytes": 6587607
+  },
+  {
+    "url": "https://arxiv.org/pdf/2407.21783.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.1-Tue-Jan-27-Pretraining-预训练/03-readings-阅读材料/2407.21783-Llama-3-Herd-of-Models-Llama3模型家族.pdf",
+    "status": "ok",
+    "bytes": 9833173
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.11416.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/03-readings-阅读材料/2210.11416-Flan-Scaling-Instruction-Finetuned-LMs-指令微调的规模化.pdf",
+    "status": "ok",
+    "bytes": 1557309
+  },
+  {
+    "url": "https://arxiv.org/pdf/2305.14387.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/03-readings-阅读材料/2305.14387-AlpacaFarm-从人类反馈中学习的仿真框架.pdf",
+    "status": "ok",
+    "bytes": 1379803
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Proposal_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/05-project-期末项目/Project-Proposal-Instructions-项目提案说明.pdf",
+    "status": "ok",
+    "bytes": 154478
+  },
+  {
+    "url": "https://arxiv.org/pdf/2306.04751.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/03-readings-阅读材料/2306.04751-How-Far-Can-Camels-Go-开源指令微调能走多远.pdf",
+    "status": "ok",
+    "bytes": 1583165
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Proposal_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/Project-Proposal-Instructions-项目提案说明.pdf",
+    "status": "ok",
+    "bytes": 154478
+  },
+  {
+    "url": "https://arxiv.org/pdf/2305.18290.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/03-readings-阅读材料/2305.18290-DPO-直接偏好优化.pdf",
+    "status": "ok",
+    "bytes": 1299212
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/DFP_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/DFP-Instructions-默认期末项目说明-GPT2.pdf",
+    "status": "ok",
+    "bytes": 976136
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/DFP_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W4.2-Thu-Jan-29-Post-training-后训练/05-project-期末项目/DFP-Instructions-默认期末项目说明-GPT2.pdf",
+    "status": "ok",
+    "bytes": 976136
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture09-peft.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/01-slides-幻灯片/cs224n-2026-lecture09-peft-高效适配与提示学习.pdf",
+    "status": "ok",
+    "bytes": 5494433
+  },
+  {
+    "url": "https://arxiv.org/pdf/2005.14165.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/03-readings-阅读材料/2005.14165-GPT3-语言模型即少样本学习者.pdf",
+    "status": "ok",
+    "bytes": 6768044
+  },
+  {
+    "url": "https://arxiv.org/pdf/2201.11903.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/03-readings-阅读材料/2201.11903-Chain-of-Thought-思维链提示.pdf",
+    "status": "ok",
+    "bytes": 891773
+  },
+  {
+    "url": "https://arxiv.org/pdf/1902.00751.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/03-readings-阅读材料/1902.00751-Adapters-NLP参数高效迁移学习.pdf",
+    "status": "ok",
+    "bytes": 872475
+  },
+  {
+    "url": "https://arxiv.org/pdf/2106.09685.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/03-readings-阅读材料/2106.09685-LoRA-大语言模型的低秩适配.pdf",
+    "status": "ok",
+    "bytes": 1609513
+  },
+  {
+    "url": "https://arxiv.org/pdf/1803.03635.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.1-Tue-Feb-03-PEFT-高效适配/03-readings-阅读材料/1803.03635-Lottery-Ticket-Hypothesis-彩票假说.pdf",
+    "status": "ok",
+    "bytes": 4001475
+  },
+  {
+    "url": "https://language-agent-tutorial.github.io/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/03-readings-阅读材料/Language-Agents-Tutorial-语言智能体综述.html",
+    "status": "ok",
+    "bytes": 11552
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture10-rag-agents.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/01-slides-幻灯片/cs224n-2026-lecture10-rag-agents-智能体工具与RAG.pdf",
+    "status": "ok",
+    "bytes": 7033773
+  },
+  {
+    "url": "https://arxiv.org/pdf/2210.03629.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/03-readings-阅读材料/2210.03629-ReAct-推理与行动协同.pdf",
+    "status": "ok",
+    "bytes": 633805
+  },
+  {
+    "url": "https://arxiv.org/pdf/2005.11401.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/03-readings-阅读材料/2005.11401-RAG-知识密集型NLP的检索增强生成.pdf",
+    "status": "ok",
+    "bytes": 885323
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a4.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/04-assignment-作业/a4-code-作业4代码-大模型评测.zip",
+    "status": "ok",
+    "bytes": 39702
+  },
+  {
+    "url": "https://arxiv.org/pdf/2302.04761.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/03-readings-阅读材料/2302.04761-Toolformer-语言模型自学使用工具.pdf",
+    "status": "ok",
+    "bytes": 657966
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a4.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/04-assignment-作业/a4-handout-作业4说明.pdf",
+    "status": "ok",
+    "bytes": 115311
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a4_tex.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.2-Thu-Feb-05-Agents-RAG-智能体与检索增强/04-assignment-作业/a4-latex-作业4LaTeX模板.zip",
+    "status": "ok",
+    "bytes": 1077331
+  },
+  {
+    "url": "https://www.ruder.io/nlp-benchmarking/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.1-Tue-Feb-10-Evaluation-评测与基准/03-readings-阅读材料/Ruder-NLP-Benchmarking-NLP评测的挑战与机遇.html",
+    "status": "ok",
+    "bytes": 61965
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/materials/hf_transformers_tutorial.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W5.3-Fri-Feb-06-HuggingFace-Tutorial-HuggingFace教程/01-slides-幻灯片/hf-transformers-tutorial-HuggingFace教程.pdf",
+    "status": "ok",
+    "bytes": 820901
+  },
+  {
+    "url": "https://tatsu-lab.github.io/alpaca_eval/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.1-Tue-Feb-10-Evaluation-评测与基准/03-readings-阅读材料/AlpacaEval-指令遵循自动评测.html",
+    "status": "ok",
+    "bytes": 16199
+  },
+  {
+    "url": "https://arxiv.org/pdf/2009.03300.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.1-Tue-Feb-10-Evaluation-评测与基准/03-readings-阅读材料/2009.03300-MMLU-大规模多任务语言理解.pdf",
+    "status": "ok",
+    "bytes": 2074939
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture11-evaluation.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.1-Tue-Feb-10-Evaluation-评测与基准/01-slides-幻灯片/cs224n-2026-lecture11-evaluation-评测与基准.pdf",
+    "status": "ok",
+    "bytes": 12163755
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture12-reasoning-part1.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.2-Thu-Feb-12-Reasoning-1-推理上/01-slides-幻灯片/cs224n-2026-lecture12-reasoning-part1-推理上.pdf",
+    "status": "ok",
+    "bytes": 8143180
+  },
+  {
+    "url": "https://arxiv.org/pdf/2201.11903.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.2-Thu-Feb-12-Reasoning-1-推理上/03-readings-阅读材料/2201.11903-Chain-of-Thought-思维链提示.pdf",
+    "status": "ok",
+    "bytes": 891773
+  },
+  {
+    "url": "https://arxiv.org/pdf/2203.11171.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.2-Thu-Feb-12-Reasoning-1-推理上/03-readings-阅读材料/2203.11171-Self-Consistency-自洽性提升思维链推理.pdf",
+    "status": "ok",
+    "bytes": 10505941
+  },
+  {
+    "url": "https://arxiv.org/pdf/2211.09110.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.1-Tue-Feb-10-Evaluation-评测与基准/03-readings-阅读材料/2211.09110-HELM-语言模型整体评测.pdf",
+    "status": "ok",
+    "bytes": 6045688
+  },
+  {
+    "url": "https://arxiv.org/pdf/2503.14476.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.2-Thu-Feb-12-Reasoning-1-推理上/03-readings-阅读材料/2503.14476-DAPO-大规模开源LLM强化学习系统.pdf",
+    "status": "ok",
+    "bytes": 826801
+  },
+  {
+    "url": "https://arxiv.org/pdf/2501.12948.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W6.2-Thu-Feb-12-Reasoning-1-推理上/03-readings-阅读材料/2501.12948-DeepSeek-R1-用强化学习激励推理能力.pdf",
+    "status": "ok",
+    "bytes": 5034998
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture13-reasoning-part2.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/01-slides-幻灯片/cs224n-2026-lecture13-reasoning-part2-推理下.pdf",
+    "status": "ok",
+    "bytes": 5185774
+  },
+  {
+    "url": "https://arxiv.org/pdf/2211.17192.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/03-readings-阅读材料/2211.17192-Speculative-Decoding-投机解码加速推理.pdf",
+    "status": "ok",
+    "bytes": 574982
+  },
+  {
+    "url": "https://arxiv.org/pdf/2408.03314.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/03-readings-阅读材料/2408.03314-Test-Time-Compute-测试时计算缩放.pdf",
+    "status": "ok",
+    "bytes": 3870997
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Milestone_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/05-project-期末项目/Project-Milestone-Instructions-项目中期报告说明.pdf",
+    "status": "ok",
+    "bytes": 177740
+  },
+  {
+    "url": "https://arxiv.org/pdf/2104.09864.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/03-readings-阅读材料/2104.09864-RoFormer-旋转位置编码.pdf",
+    "status": "ok",
+    "bytes": 599289
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Milestone_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/Project-Milestone-Instructions-项目中期报告说明.pdf",
+    "status": "ok",
+    "bytes": 177740
+  },
+  {
+    "url": "https://arxiv.org/pdf/2305.20050.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.1-Tue-Feb-17-Reasoning-2-推理下/03-readings-阅读材料/2305.20050-Lets-Verify-Step-by-Step-逐步验证.pdf",
+    "status": "ok",
+    "bytes": 4384742
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture14-guest-julie-tokenization-multilinguality.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.2-Thu-Feb-19-Tokenization-Multilinguality-分词与多语言/01-slides-幻灯片/cs224n-2026-lecture14-tokenization-multilinguality-分词与多语言.pdf",
+    "status": "ok",
+    "bytes": 3777050
+  },
+  {
+    "url": "https://web.stanford.edu/~jurafsky/slp3/2.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.2-Thu-Feb-19-Tokenization-Multilinguality-分词与多语言/03-readings-阅读材料/Jurafsky-Martin-SLP3-ch02-正则表达式与文本处理.pdf",
+    "status": "ok",
+    "bytes": 825830
+  },
+  {
+    "url": "https://arxiv.org/pdf/1508.07909.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.2-Thu-Feb-19-Tokenization-Multilinguality-分词与多语言/03-readings-阅读材料/1508.07909-BPE-稀有词神经机器翻译的子词单元.pdf",
+    "status": "ok",
+    "bytes": 193216
+  },
+  {
+    "url": "https://aclanthology.org/2023.emnlp-main.614.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.2-Thu-Feb-19-Tokenization-Multilinguality-分词与多语言/03-readings-阅读材料/2023.emnlp-main.614-Do-All-Languages-Cost-the-Same-所有语言的代价都一样吗.pdf",
+    "status": "ok",
+    "bytes": 864117
+  },
+  {
+    "url": "https://aclanthology.org/2020.acl-main.747.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W7.2-Thu-Feb-19-Tokenization-Multilinguality-分词与多语言/03-readings-阅读材料/2020.acl-main.747-XLM-R-大规模无监督跨语言表示学习.pdf",
+    "status": "ok",
+    "bytes": 418035
+  },
+  {
+    "url": "https://medium.com/@beenkim/the-pareto-frontier-of-human-centered-ai-54f90ba5872c",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/03-readings-阅读材料/Been-Kim-Pareto-Frontier-of-Human-Centered-AI-以人为中心AI的帕累托前沿.html",
+    "status": "fail",
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "url": "https://arxiv.org/pdf/2506.12152.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/03-readings-阅读材料/2506.12152-Agentic-Interpretability-智能体式可解释性.pdf",
+    "status": "ok",
+    "bytes": 695155
+  },
+  {
+    "url": "https://arxiv.org/pdf/2510.08506.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/03-readings-阅读材料/2510.08506-Neologism-Learning-新词学习与自我陈述.pdf",
+    "status": "ok",
+    "bytes": 597972
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Report_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/05-project-期末项目/Project-Report-Instructions-期末项目终稿说明.pdf",
+    "status": "ok",
+    "bytes": 194483
+  },
+  {
+    "url": "https://arxiv.org/pdf/2502.07586.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/03-readings-阅读材料/2502.07586-We-Cant-Understand-AI-用现有词汇无法理解AI.pdf",
+    "status": "ok",
+    "bytes": 1382947
+  },
+  {
+    "url": "https://www.pnas.org/doi/pdf/10.1073/pnas.2406675122",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.1-Tue-Feb-24-Interpretability-可解释性/03-readings-阅读材料/PNAS-AlphaZero-concept-discovery-用概念发现弥合人机知识鸿沟.pdf",
+    "status": "fail",
+    "error": "curl: (56) The requested URL returned error: 403"
+  },
+  {
+    "url": "https://visualsketchpad.github.io/",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/Visual-Sketchpad-视觉思维链草图.html",
+    "status": "ok",
+    "bytes": 16421
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/project/Project_Report_Instructions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/FP-期末项目/Project-Report-Instructions-期末项目终稿说明.pdf",
+    "status": "ok",
+    "bytes": 194483
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture16-impact-on-humanity.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W8.2-Thu-Feb-26-Social-Impacts-社会影响与风险/01-slides-幻灯片/cs224n-2026-lecture16-impact-on-humanity-NLP社会影响与风险.pdf",
+    "status": "ok",
+    "bytes": 5911930
+  },
+  {
+    "url": "https://arxiv.org/pdf/2405.09818.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2405.09818-Chameleon-混合模态早期融合基础模型.pdf",
+    "status": "ok",
+    "bytes": 25245551
+  },
+  {
+    "url": "https://arxiv.org/pdf/2408.11039.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2408.11039-Transfusion-下一词预测与图像扩散一体.pdf",
+    "status": "ok",
+    "bytes": 14087563
+  },
+  {
+    "url": "https://arxiv.org/pdf/2301.03728.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2301.03728-Scaling-Laws-生成式混合模态缩放律.pdf",
+    "status": "ok",
+    "bytes": 1576065
+  },
+  {
+    "url": "https://arxiv.org/pdf/2211.12561.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2211.12561-Retrieval-Augmented-Multimodal-检索增强多模态语言建模.pdf",
+    "status": "ok",
+    "bytes": 10088386
+  },
+  {
+    "url": "https://arxiv.org/pdf/2411.04996.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2411.04996-Mixture-of-Transformers-稀疏可扩展多模态架构.pdf",
+    "status": "ok",
+    "bytes": 15589871
+  },
+  {
+    "url": "https://arxiv.org/pdf/2502.14191.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2502.14191-Multimodal-RewardBench-视觉语言模型奖励模型评测.pdf",
+    "status": "ok",
+    "bytes": 873103
+  },
+  {
+    "url": "https://arxiv.org/pdf/2309.02591.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2309.02591-CM3Leon-自回归多模态模型的规模化.pdf",
+    "status": "ok",
+    "bytes": 39621646
+  },
+  {
+    "url": "https://arxiv.org/pdf/2510.03506.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2510.03506-OneFlow-并发混合模态交错生成.pdf",
+    "status": "ok",
+    "bytes": 23207168
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture19-open-questions.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W10.1-Tue-Mar-10-Open-Questions-NLP开放问题/01-slides-幻灯片/cs224n-2026-lecture19-open-questions-NLP2026开放问题.pdf",
+    "status": "ok",
+    "bytes": 7969408
+  },
+  {
+    "url": "https://web.stanford.edu/class/cs224n/assignments_w26/a2.zip",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W2.1-Tue-Jan-13-Neural-Nets-神经网络基础/04-assignment-作业/a2-code-作业2代码-神经网络与依存句法.zip",
+    "status": "ok",
+    "bytes": 38968442
+  },
+  {
+    "url": "https://arxiv.org/pdf/2509.07295.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2509.07295-Reconstruction-Alignment-重建对齐改进统一多模态模型.pdf",
+    "status": "ok",
+    "bytes": 42795639
+  },
+  {
+    "url": "https://arxiv.org/pdf/2412.15188.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/W9.1-Tue-Mar-03-Multimodality-多模态/03-readings-阅读材料/2412.15188-LMFusion-把预训练LM适配到多模态生成.pdf",
+    "status": "ok",
+    "bytes": 20643338
+  },
+  {
+    "url": "http://u.cs.biu.ac.il/~yogo/nnlp.pdf",
+    "dest": "/Users/a1994846931931/workspace/course-cs224n/00-课程总览/参考书-Reference-Texts/Goldberg-Neural-Network-Models-for-NLP-NLP神经网络入门.pdf",
+    "status": "fail",
+    "error": "curl: (28) Operation timed out after 120004 milliseconds with 0 bytes received\ncurl: (28) Operation timed out after 120006 milliseconds with 0 bytes received\ncurl: (28) Operation timed out after 120001 milliseconds with 0 bytes received\ncurl: (28) Operation timed out after 120005 milliseconds with 0 bytes received"
+  }
+]

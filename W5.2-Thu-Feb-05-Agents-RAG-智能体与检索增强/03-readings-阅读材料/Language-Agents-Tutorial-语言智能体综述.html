@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMNLP 2024 Tutorial: Language Agents: Foundations, Prospects, and Risks</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+              <span style="font-size: 80%">EMNLP 2024 Tutorial:</span><br />
+              Language Agents: Foundations, Prospects, and Risks
+            </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <table>
+            <tr>
+                <td width="25%" style="text-align: center; padding: 3px"><img class="profile-img" src="static/imgs/yu_su.png" alt="Yu Su"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img class="profile-img" src="static/imgs/diyi_yang.jpeg" alt="Diyi Yang"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img class="profile-img" src="static/imgs/shunyu_yao.jpeg" alt="Shunyu Yao"></td>
+                <td width="25%" style="text-align: center; padding: 3px"><img class="profile-img" src="static/imgs/tao_yu.jpeg" alt="Tao Yu"></td>
+            </tr>
+              <tr>
+                <td width="25%" style="text-align: center"><a href="https://ysu1989.github.io/" style="border-radius: 50%">Yu Su</a><sup>1</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://cs.stanford.edu/~diyiy/" style="border-radius: 50%">Diyi Yang</a><sup>2</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://ysymyth.github.io/" style="border-radius: 50%">Shunyu Yao</a><sup>3</sup></td>
+                <td width="25%" style="text-align: center"><a href="https://taoyds.github.io/" style="border-radius: 50%">Tao Yu</a><sup>4</sup></td>
+              </tr>
+            </table>
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>The Ohio State University,</span>
+            <span class="author-block"><sup>2</sup>Stanford University,</span>
+            <span class="author-block"><sup>3</sup>OpenAI,</span>
+            <span class="author-block"><sup>4</sup>University of Hong Kong</span>
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <b>Full slide deck: <a href="https://tinyurl.com/language-agent-tutorial-2024">https://tinyurl.com/language-agent-tutorial-2024</a></b><br/>
+            <b>Recording: <a href="https://tinyurl.com/agent-tutorial-recording-2024">https://tinyurl.com/agent-tutorial-recording-2024</a></b><br/>
+            <b>Friday, November 15 14:00 - 17:30 (EDT) @ Brickell/Flagler Ballrooms (Terrace Level)</b>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            In the past year, AI agents based on large language models (LLMs) have rapidly become one of the most exciting yet controversial topic. Some think it's the next big thing, while others think these agents are just thin wrappers around LLMs. In this tutorial, we hope to carefully examine and reconcile the different viewpoints and properly contextualize the new generation of AI agents in the broader history of AI. We believe contemporary AI agents are qualitatively different from the previous generations (e.g., logical agents or neural agents). By integrating LLM(s), they gain a new capability of <i>using language as a vehicle for reasoning and communication</i>, which substantially improves their expressiveness and adaptivity. Therefore, they are best called <b>language agents</b>, for language being their most distinct trait.
+
+          </p>
+          <p>
+            Language played a crucial role in human cognitive evolution, and AI might be following a similar path. However, there has been little systematic discussion on the definition, theoretical foundations, applications, risks, and future directions of language agents. This cutting-edge tutorial aims to fill that gap by providing a comprehensive exploration of language agents.
+            
+          </p>
+
+          <p>
+            Note that this tutorial is not meant to be a comprehensive survey of related work or a practitioner's guide that focuses on code frameworks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule</h2>
+        <p>
+          Our tutorial will be held on November 15 (all the times are based on EST =  Miami local time).
+          <!-- <em>Slides may be subject to updates.</em> -->
+        </p>
+
+        <div class="content has-text-justified">
+
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-0lax{text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-0pky">Time</th>
+              <th class="tg-0lax">Section</th>
+              <th class="tg-0lax">Presenter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0lax">14:00—14:20</td>
+              <td class="tg-0lax">Part I: Introduction  <a href="./slides/I-Introduction.pdf" target='_blank'>[slides]</a></td>
+              <td class="tg-0lax">Yu Su</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">14:20—15:20</td>
+              <td class="tg-0lax">Part II: Foundations: Reasoning, Memory, and Planning  <a href="./slides/II-Foundations-Reasoning-Memory.pdf" target='_blank'>[reasoning+memory]</a> <a href="./slides/II-Foundations-Planning.pdf" target='_blank'>[planning]</a></td>
+              <td class="tg-0lax">Shunyu Yao, Yu Su</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:20—15:30</td>
+              <td class="tg-0lax">Q&A Session I</td>
+              <td class="tg-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">15:30—16:00</td>
+              <td class="tg-0lax">Coffee Break</td>
+              <td class="tg-0lax"></td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">16:00—16:45</td>
+              <td class="tg-0lax">Part III: Applications, Data, and Evaluation  <a href="./slides/III-Applications-Data-Evaluation.pdf" target='_blank'>[slides]</a></td>
+              <td class="tg-0lax">Tao Yu</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">16:45—17:20</td>
+              <td class="tg-0lax">Part IV: Emerging Topics: Multi-Agent Systems, Safety, and Social Impact  <a href="./slides/IV-Emerging-Topics.pdf" target='_blank'>[slides]</a></td>
+              <td class="tg-0lax">Diyi Yang</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">17:20—17:30</td>
+              <td class="tg-0lax">Part V: Final Remarks and Outlook + Q&A Session II <a href="./slides/V-Final-Remarks.pdf" target='_blank'>[slides]</a></td>
+              <td class="tg-0lax">Diyi Yang</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{language-agent-tutorial,
+      title = "Language Agents: Foundations, Prospects, and Risks",
+      author = "Su, Yu and Yang, Diyi and Yao, Shunyu and Yu, Tao",
+      booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Tutorial Abstracts",
+      month = nov,
+      year = "2024",
+      address = "Miami, Florida, USA",
+      publisher = "Association for Computational Linguistics",
+      url = "https://aclanthology.org/2024.emnlp-tutorials.3",
+      pages = "17--24",
+    }</code></pre>
+  </div>
+</section> 
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/language-agent-tutorial/language-agent-tutorial.github.io" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

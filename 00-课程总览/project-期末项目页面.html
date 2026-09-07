@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+  <title>Stanford CS 224N | Project Reports</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <!-- Google Analytics -->
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-60458624-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+<!-- <script src="header.js"></script> -->
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand brand" href="index.html">CS224N Home</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#coursework">Coursework</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="office_hours.html">Office Hours</a></li>
+        <li><a href="project.html">Final projects</a></li>
+        <li><a href="https://canvas.stanford.edu/courses/191439/external_tools/3367">Lecture Videos</a></li>
+        <li><a href="https://edstem.org/us/courses/57406">Ed Forum</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div id="header" style="text-align:center">
+  <a href="http://nlp.stanford.edu/">
+    <img src="images/stanford-nlp-logo-new.jpg" class="logo-left">
+  </a>
+  <a href="http://stanford.edu/">
+    <img src="images/stanfordlogo.jpg" class="logo-right">
+  </a>
+  <h1>CS224N: Natural Language Processing with Deep Learning</h1>
+  <h3>Stanford / Winter 2026</h3>
+  <div style="clear:both;"></div>
+</div>
+
+<div class="sechighlight">
+  <div class="container sec">
+    <h2>Project Awards</h2>
+    Congratulations to the following teams, who produced exceptional, award-winning projects!
+    
+    <h3>Best Default Project</h3>
+    <ul>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1FmXex1CNP9NMM6Sn84QNOVNCnwjborKU/view?usp=sharing">Fairness-Aware Fine-Tuning of GPT-2 for Paraphrase Detection</a></strong>. Deonna Owens.
+      </li>
+    </ul>
+    
+    <h3>Best Custom Project</h3>
+    <ul>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1hdBkEktCljkEFAoe9Z8WTKKj-F92sRuh/view?usp=sharing">SYMBRION: Symbol Context and Dream Ego Relations Across Lifelong Dream Series as a Tool for Psychoanalysis</a></strong>. Bobby Rohrkemper, Chia-Wei Cheng.
+      </li>
+    </ul>
+    
+    <h3>Outstanding Default Projects</h3>
+    <ul>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1Laef75yBJxiepchqc4aptUHOSx3xpaub/view?usp=drive_link">Accelerating Attention for GPT-2 Using FLASHATTENTION, Longformer, and cosFORMER</a></strong>. Diego Sierra, Thomas Sarda, Tom-Eliot Jullien.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1Q4kw19wsL-EUwThLZnE5GdOS-5DrnTkf/view?usp=drive_link">KV Caching and Speculative Decoding at GPT-2 Scale: Acceptance, Cost Ratio, and the Limits of Speedup</a></strong>. Amulya Parthasarathy.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1Duz7yR3nVvj5lhV2JdRWMcVUX28HOUoa/view?usp=sharing">Accelerated DPO Fine-tuning GPT-2 with Constructed Data</a></strong>. Jessie Ou, Weixin Yu.
+      </li>
+    </ul>
+    
+    <h3>Outstanding Custom Projects</h3>
+    <ul>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1iG2nPk_-tznWJohCS2C6MpHBHWDbZeh5/view?usp=sharing">TRACE: Tool-augmented Reasoning via Atomic Cheatsheet Editing</a></strong>. Kyleen Liao, Roshen Nair, Arnold Yang.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1BXkobcZ22FagAsVXKMVEKggmwmcPSKaU/view?usp=drive_link">Dynamic Token Merging for Efficient Subword Encoder-Decoder Transformers</a></strong>. Nathan Zhou, Chris Gu, Marco Andono Sie.
+      </li>
+      <li>
+        <strong><a href="https://drive.google.com/file/d/1Yxh7W-q4wvc99DgoxAilTM4bW12JZCwh/view?usp=drive_link">Concept Training for Human-Aligned Language Models</a></strong>. Christine Zhang.
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container sec">
+  <h2>Custom Projects</h2>
+  <table class="table">
+    <colgroup>
+      <col style="width:60%">
+      <col style="width:40%">
+    </colgroup>
+    <tbody>
+      <tr class="active"><th>Project name</th><th>Authors</th></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1TKtMp75zbRm2wDfSrtu3EHdYLGWzH7il/view?usp=sharing">20 Questions for Code: Improving Code Generation with Information-Theoretic Clarification</a></td><td>Alexandra Suriya Kim, Julia Xi, Ria Garg</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1dhGvOCGOEQkPm3TucPox5ZrSPUnvkkQ6/view?usp=drive_link">A Bigger Catch: Fine-Grained Curriculum Standards Alignment on the MathFish Benchmark</a></td><td>Mayank Sharma, Teah Shi, Xinman Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1JrCOwRFd5JgqjdTTi5C4hKOoDo3Gi5EH/view?usp=sharing">Adapting Language Models for Low-Resource GPU Kernel Programming</a></td><td>Annmaria Antony, Laasya Konidala, Natalia Pahlavan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1bXK60si4tDGC61KY4J4RflhPTPL91uHS/view?usp=drive_link">Adaptive Test-Time Compute for Efficient Reasoning in Language Models</a></td><td>Ryan Tan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1OebpFnIki7nS_n96g95EpigCz5tdFIFQ/view?usp=drive_link">Adaptive Test-Time Compute for Pedagogically Grounded Reasoning in LLMs</a></td><td>Isha Jain, Jason Sejin Chon, Medhya Goel</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ChlbaaCJUpQTPKm1oJYp1zxk-f_N7lbx/view?usp=drive_link">Agents Don’t Always Do What They Think</a></td><td>Mark William Gernitis</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1DhGWTi_8jAl64mS5yBzQinCL_AOqCpfq/view?usp=drive_link">Always-On Learning Companion: Proactive Multimodal Tutoring for Everyday Study Scenarios</a></td><td>Chenyue Li, Haowen Wang, Zhen Jia</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1H_awmB8Nxq4lgZiuimVqPDAdx-u_y4e2/view?usp=drive_link">Analyzing Robustness and Context Use in Clinical Natural Language Inference</a></td><td>Ryan Minh-Tri Le</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1zWrlZasrX3astiulkP3bbGlPKGO8u_TD/view?usp=sharing">Attention Modifications for Improved Adaptation</a></td><td>Jerry Yin, Michael Jang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1_s5o22mQEnUtyeEtSsG36ePE_pw4uy7O/view?usp=drive_link">Auditing Model-Generated Privacy Benchmarks: Do Synthetic Evaluations Reflect Real User Privacy Norms?</a></td><td>Selena She</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1HFoqonVdYp49ocO0uSFkNQlKD-t8MFxB/view?usp=drive_link">Benchmarking and Improving Generative Diversity in Language Models via Diverse Preference Optimization</a></td><td>Annika Kaul Singh, Shyam Sai Bethina</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1LTxZYsm_dlroDcriFxliZDcdW-xAN0MY/view">Betting on Reasoning: Predicting Forecast Reliability in Prediction Markets</a></td><td>Rahul Rejeev</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ox2zajKZTO6isZNTgXxZSXgerKweSv4r/view?usp=drive_link">Beyond Bradley-Terry: Random Logit Preference Modeling for RLHF</a></td><td>Junyi Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1z4zxXl7MJQyAAlrt1qfFdQIGxGS8j2zq/view?usp=drive_link">Beyond Knowledge: Syntactic Complexity as a Bottleneck for Reasoning in "Bracket City" Puzzles</a></td><td>Amrita Malhotra</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1PbRVolm96aXGvKghIMs0CEYOEHZvLnK3/view?usp=sharing">Bootstrapping Reasoning in Compact Language Models: A Multi-Stage Reinforcement Learning Pipeline with Targeted Failure Repair</a></td><td>Joseph Li, Max Luis Rodriguez, Victor Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1IVLPf80zT8-Ab_Sx_zk5EfgEcxqPCsqy/view?usp=sharing">Bootstrapping Safety-Aligned Reasoning in Small Language Models via Self-Instruct</a></td><td>J Yim, Komal Vij, Tim Jing</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1kcRAo9E_o2p9hsLf6M3paXsdCZRdq14J/view?usp=drive_link">Building A Contextual Reasoning Aware Social-Intel Agent with Reinforcement Learning</a></td><td>Binbin Li, Da Sun, Ying Lu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1LvmLkgpG9_W50LOHWN4P5GEHXufZF8S2/view?usp=drive_link">Burst: Multi-Agent System for High-Quality Temporal Content Generation</a></td><td>Jeffrey Hao Wang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1-8wAcUiz3LpYMUavipmLfymO9p1PtCPM/view?usp=drive_link">Can Coding Agents Manage Their Own Memory?</a></td><td>Jerry Wang, Ryan Wang, Sameer Agrawal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1s8OGcFGctQXU-o5FL4gRUXjD1P8Caz2R/view?usp=sharing">Cartoon Caption Humor Quality Assessment and Generation with DPO and LoRA</a></td><td>Isaiah Flores, Katherine Ha Wang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ojZBh9WmE7IPnMLGbW3_UiFiUZEPYlQ5/view">Causal Transfer of Semantic Operators Across Transformer Language Models</a></td><td>Shivatmica Murgai</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1yy5HfOswguuKAFA3gzRtgqLtsdoyamqI/view">Childproofing LLMs with Contrastive Activation Addition</a></td><td>Rosemary Mingrui Jiang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1cQBOaYCWzgWWQdun8xVbBd-2Ss47e3_c/view">Childproofing LLMs: A Comparative Analysis of CAA, ReFT, and DPO for Safety Alignment</a></td><td>Alice Zhu, Anya Han Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1pxtEYH6ZmY8EMD76IG8HeSTn-6fS1FuY/view?usp=sharing">Coaching Qwen3 Coder 30B to Think Like a CodeClash Arena Agent</a></td><td>Ivy (Ning) Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1yhgmpaip5_8iP-8cq6LUgI5ZYSUo3Owf/view?usp=sharing">CoFi-PG: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs</a></td><td>Elai Ben-Gal, Stela Tong</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1JaRHtanb6cGPZSin6NS1vmJBLdMkeWVH/view?usp=sharing">Cognitive Compression: Hierarchical Chain-of-Thought for Efficient LLM Reasoning</a></td><td>Anuj Jamwal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1j0XWD31OgPDf137zQmR-3PTNh83YbNNM/view?usp=sharing">Collaborative Dynamic Cheatsheet: Multi-Agent Test-Time Learning with Small Language Models</a></td><td>Erica Wang, Malvyn Lai</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1TyfqWOj8RhC1z7FGMXWanvTW6WksGisG/view?usp=drive_link">Compiler-in-the-Loop: Decomposing the Value of Static Verification for Low-Resource Code Generation</a></td><td>Hlumelo Notshe, Joshua Martinez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1e045Zn3wrk5y2boyIt3KkYryNsD-W2ZB/view?usp=drive_link">Compositional Tool-Sequence Generation in Small Language Models</a></td><td>Benji Warburton, Maanit Goel</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Yxh7W-q4wvc99DgoxAilTM4bW12JZCwh/view?usp=drive_link">Concept Training for Human-Aligned Language Models</a></td><td>Christine Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1PV0Y2lYM_-nuynhFLBmhlS1x0CvOfZ7M/view?usp=drive_link">Confusion-Set Guided Retrieval for LLM-Constrained Brain-to-Text Decoding</a></td><td>Andrew Su, Hyungjae Kim, Vincent Jinpeng Yip</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1itWG5cJUODG0_DHQmih85IeXUGJrqfeY/view?usp=sharing">Context Under Pressure: How Language Model Agents Should Save and Read Information Over Long Interactions</a></td><td>Alexander Owen Worley</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/15LKUEvV6XkFR1Oo-dgcn06qIOy9hQghy/view?usp=drive_link">Continuous Utility Direct Preference Optimization</a></td><td>Muhammad Ahmed Mohsin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1wl8RMIzjdqTLO-T0w74IUR5xJ54Oqa8J/view?usp=sharing">Cost-Aware Escalation from Scalar Reward Models to Generative Models</a></td><td>Cole Yarbrough, Landon Renjiro Maka'ike Choy, Rui Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1YysdJp7XdtAOLfmT_mZz9n7wfJKFkkgB/view?usp=sharing">Curriculum-Based Fine-Tuning for Summarization of Endometriosis Data</a></td><td>Ali Hicham Tout</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1fitHvha27RAwa_5CFMekHRbb011GF9RW/view?usp=sharing">Data-Centric Control of Verbosity for DPO-Based Instruction Alignment</a></td><td>Susan Lee, Will Richard Alex Furlow</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Has1nwj6_-s4OY-6QaQiSxkG2p4RRnZG/view?usp=drive_link">DeepRoot: Graph-Coordinated Multi-Agent Reasoning</a></td><td>Sean J Wang, Sijbren Manuel Kramer, Zijian (Carl) Ma</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1BK3eoQSxe8dWu4B140uiqfRXI9tu1dXi/view?usp=drive_link">Designing a Conservative Humor Filter Can a Model Tell If an Image Caption Is Funny?</a></td><td>Michael Roger</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Ohyv9v013IOuLjKY2ARra-FkvIfdH5SZ/view?usp=sharing">Diagnosing the Reversal Curse via Mechanistic Probing and Symmetric Training</a></td><td>Deepti Gupta, Ke Huang, Rafael Cardoso Ferreira</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1VrZcxhIqy7lu6ZSmSrVokGx2YZJYvb_W/view?usp=drive_link">Diversity-Incentivized GRPO for Constrained Arithmetic Reasoning</a></td><td>Gaurav Tyagi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1L3GK5XXXqDBhyMZLl3R0PXkzi0QzvftU/view?usp=drive_link">Do Language Models implement compositional solutions for natural language understanding</a></td><td>Ahmad Jabbar</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1WWfuj6bKOuUykIzwMJt0AbCLtLAxzk81/view?usp=sharing">Do Long Contexts Help Legal Knowledge? A Case Study on US–China Securities Regulation</a></td><td>Yufei Peng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1cvKSQEc2-gHDU2AOA_bFBBZoQlKmfHeg/view?usp=sharing">Does Fine-Tuning Hurt Cross-Platform Generalization in Depression Detection?</a></td><td>Yanav Lall</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1MvqtDv2_qfkeDr3VI3_ouYxk4dSgM665/view?usp=sharing">Does Pedagogy Hurt Truth? Evaluating Educational Rewriting in Medicine</a></td><td>Cally Lin, Sasa Simic</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1tzfOGIeRZRTrcFS8HA-lwyWpDTnEIQrt/view?usp=drive_link">Don’t Think About It: Activation Steering as Silent Defense Against Prompt Injection</a></td><td>Gaurav Anand</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1I6vW9WQnt6tM2iVQPQpEAxS68Z0-IhGK/view?usp=sharing">Dynamic Ledger: Retrieval-Augmented Structured Memory for Test-Time Learning</a></td><td>Jerry Gu, Sabrina Yen-Ko, Shurui Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1BXkobcZ22FagAsVXKMVEKggmwmcPSKaU/view?usp=drive_link">Dynamic Token Merging for Efficient Subword Encoder-Decoder Transformers</a></td><td>Chris Gu, Marco Andono Sie, Nathan Zhou</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1wKisWVnppkVUO-BRgmQUBZID55Oi4QtB/view?usp=drive_link">Dynamic Token Merging for Encoder-Only Transformers: Adapting MrT5’s Delete Gate to BERT and XLM-RoBERTa</a></td><td>Aronima Dass, Hiva Zaad, Tianhui Huang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ywk42ek3WHcQ8yO2oWkGyuVYWzWuUJnc/view?usp=sharing">Effect of Text Embedding Scale on GraphRAG Accuracy</a></td><td>Jon Valur Bjornsson</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1IIzHl4n6Uzf801lUtVIXq1qJZzZhDdOs/view?usp=drive_link">Emotional Arc Preservation in LLM Literary Translation</a></td><td>Chloe Di Murdoch, Esidore Fajardo Eneinyang, Julia E Rhee</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/197_F2xFZNTCfY3dzfcy7PmF45-HkHAPa/view?usp=drive_link">End-to-End Driving Trajectory Prediction with Vision-Language-Action Model</a></td><td>Anze Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1wfnyuPQEvuHlv0425VAkuuHg9kfiIDcG/view?usp=sharing">Energy-Accuracy Trade-offs in Transformer-Based NLP Models: A Unified Benchmarking Study</a></td><td>Thibaud Xavier Clement</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1HAZquN1T5KpqnJBD-bAweH3M2_igxo9v/view?usp=drive_link">Entropy-Triggered RAG: Optimizing Retrieval Efficiency via Token-Level Shannon Entropy</a></td><td>Yucheng Yao</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1hEteXqvN7IwLJEJKn3Z1eugNSVlow9ZI/view?usp=drive_link">Evaluating Eliminative Reasoning in LLM-Based Differential Diagnosis</a></td><td>Seyun Bang, Tatiana Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1zECH9eeSeygB2RUbeqH5cQV22BAZVv4x/view?usp=drive_link">Evaluating JEPA for Natural Language Tasks</a></td><td>Henry Jingsong Zhou, Oleh Ivankiv, Yousef Hassan Ramadan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1TEjJATYSUyit32ZfaS2gUwYbjYZd_8uE/view?usp=drive_link">Evaluating Robustness of Large Language Models to Algospeak</a></td><td>Hnin Yupar Mon, Thet Htar Thin Zar</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1LIkiEpnRqySU6XQ5MPP5SZ1o4t20UMNO/view?usp=drive_link">Evaluating Robustness of Social Bias Detection to Lexical and LLM-Driven Perturbations</a></td><td>Nomin-Erdene Bayarsaikhan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/11me1Cbb0vQrzuKf1RTwowJ2321hh2TxK/view?usp=drive_link">Evaluating User-Style Adaptation for Professional Text Generation</a></td><td>Andrea Ji Woo Nam Song</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1TxSWGpRRxNcInAHD6G4VLn0O8KDM7DjY/view?usp=drive_link">FACT: Attention Consistency Training Mitigates Sycophancy and Jailbreaks</a></td><td>Emma Sampietro, Justin Nicolas Hartenstein</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1D7vR-1porZQ_dXkCp4lJqQjFBtLG50-v/view?usp=sharing">FALCON: Factual-Aware Logical Consistency for Large Language Model Outputs via NLI-Guided Mixed Integer Optimization</a></td><td>Rehan Raza Azam</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1k3kz9b8qeOmivIhSm9AreNkybS5SfGbu/view?usp=drive_link">Fast Compression versus Exact Recall: Investigating
+the Trade-offs Between Models in Specialized
+Reasoning Tasks</a></td><td>Jerry Xiao, Nick Yan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1A79GQjv0BVaCqczSN0eptW1Pw7XD8AT_/view?usp=drive_link">Fast Vocabulary Transfer for African Languages in Multilingual Machine Translation</a></td><td>Kailash Chandran Elumalai, Biya Brook</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13CQkkS7UB2NF7jOJQFY2T0_rH_c7bJxy/view?usp=drive_link">From Premise to Punchline: A Fine-tuned Model and “Writers’ Room” Framework for Saturday Night Live Sketch Script Generation</a></td><td>Hannah Yu, Natalie Hampton</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1K8x5HzguZkI7YRxovY9_rzd2utWa7sVz/view?usp=sharing">From Private Memory to Collective Intelligence: Collaborative Test-Time Learning</a></td><td>Jiaming Shen, Jiaxin Fang, Xinrui Jiang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1_rqe5K68BlZfU9ngzXvXhtMDN-KxWY3K/view?usp=drive_link">From Symptoms to Syndromes: Development and Validation of Fine-Tuning Transformer Architectures for Genetic Neurological Disease Diagnoses</a></td><td>Anushka Rawat, Ximing Gao, Yi Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/12WXyOWHloAN_fabQFpWWyoJJtQITbmSH/view?usp=sharing">Generative Dialogue State Tracking with GPT-2 for Task-Oriented Service Conversations</a></td><td>Venu Madhav Samprathi Ram Prasad</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Ip2roz6ld4z5wVkzHxEJ55e543lQBFow/view?usp=sharing">Gold-Guided Programmatic Distillation for Financial</a></td><td>Elana N Chen, Erica Zhao, Yun Dong</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/14ZUN1BQUbRkSREBiM-gu8HHpq6xKJmyE/view?usp=drive_link">Grounded Go Commentary Generation via Expert
+Engines and Structured Terminology</a></td><td>Yudong Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1yNGtGUfLSVaVmoKd5ZRxkd9WWSfaRLpK/view?usp=drive_link">HALLU-NLI: Revisiting Natural Language Inference (NLI) Hallucination Detection Methods forLLM-Generated Biographies</a></td><td>Nathania Elizabeth Lim, Sally Lee, Sarah Dong</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1OTN52YfosGk6gWQV3rnukHiz8v9kpEqe/view">Hash Routed Delta Patches for Fast Knowledge Updates in Small LLMs</a></td><td>Arash Hamzehlou</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/10US7Q4aJ-RP7GwkpUknT9QpBrzPiwqnZ/view?usp=drive_link">Hidden Signals: Hallucination Prediction in Medical QA</a></td><td>Catherine M Zhang, Christina Ba, Ina Kathleen Chun</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1_4hMJiQpGl6fEgnk1uRXYbHZ9WjpmLsF/view">How does fine-tuning change internal representations in an audio transcription model?</a></td><td>Brandon Liu, Jason Hu, Jenny Jin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1E8AwwI3sasJ23rdtZTJYgoZaX16ptiz1/view?usp=drive_link">Improving Lean4 Autoformalization via Cycle Consistency Fine-tuning</a></td><td>Arsen Shebzukhov</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1nB9sX-c-uHgmzZIGxKfPQuMXCmLnrOkj/view?usp=drive_link">Improving Scientific Reasoning in Small Language Models via Process Preference Re-Ranking</a></td><td>Arya Gupta, Marianne Feng Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1SRnK5D_OPN_ywrlzRJ4eIHSzBj3uBjGo/view?usp=drive_link">Investigating the Impact of Persona-Based System Prompts During SFT of Code LLMs</a></td><td>Tushar Aggarwal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1QRgwykNRTOe9gjbedFdFPFRh85RrE3e6/view?usp=drive_link">Language-Augmented Flow Matching Policies for
+Robust Out-of-Distribution Robot Manipulation</a></td><td>Jeff Liu, Lucas Sosnick</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ITpeEgnLdD_agdAVjiKdi5MoBH5p5PqF/view?usp=sharing">Language-Conditioned Objectives for Task-Agnostic Preference Learning and Controller Updates</a></td><td>Kyeong-Won Park</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Z54tr8YDfSD87DLkY30PtQSQO88UgZs_/view?usp=sharing">Learning a Discriminator for Conceptual Diversity in LM Outputs</a></td><td>Hangoo Kang, James Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/14tRxzvU78ew8zU1N-vO3zZFaAQhqg-D_/view?usp=sharing">Learning Efficient Tool Orchestration with Language Models</a></td><td>Orhun Akengin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1uDmVqCqINye_PbcNTYM47O-5ypWzzBX_/view?usp=drive_link">Learning from Critiques:
+A Geometric Framework for Response Improvement</a></td><td>Haozhan Gao</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1SYmlPjflriiNLH7MGFkHoRxD6sVVl8Jm/view?usp=drive_link">Learning When to Speak: Teaching LLMs Silence Through Specialized DPO and Distillation</a></td><td>Allison Sara John, Anthony D Argyropoulos, Yubo Ruan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1aP_VhVcaBtByPzdEfbx24H72cAi6wN26/view?usp=sharing">Location, Location, Generation: Fine-Tuning a VLM for Real Estate Descriptions</a></td><td>Carey Chang, Niko Terebuh Ustin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1M6DLRnTQWagJfoQWsXZsxs7fg8YbvYzE/view?usp=sharing">Measuring the Measure: Mechanistic Prompt Sensitivity for LLM-Based Populism Coding</a></td><td>Jiehan Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1B3czC7tI2weYRSE_tcfcQiYoLfNX40Y6/view?usp=sharing">Mechanistic Deconvolution of Memory and Context in Quantum Language Models</a></td><td>Nathan Roll</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1bHtlW6jec94guXB_AKDovgp8_MYdgc4w/view?usp=drive_link">MedDistill: Improving Clinical LLM Performance Through Natural Language Tabular Insights</a></td><td>Joshua Logan Shunk, Patrick Ruibin Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1vGdEqBQMUDpCAArRbkdfMSE1rgtBGA7Y/view?usp=sharing">MGA: Mixed Gated Attention for Efficient Long Context Attention</a></td><td>Jen Ha, Bharat Kumar</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/16oAcFWItUcuTHCKvJys_I4xrlquJJBNE/view?usp=drive_link">Mixture-of-Steering Vectors (MoSV): Sparse Gating for Compositional Hallucination Mitigation</a></td><td>Daniel Winston Lee, Olufeolu Oluwapelumi Kolawole, Vedant Malolan Srinivas</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1XzseLce2rEIht6j7oqrsXo3hTLbEiVzv/view?usp=sharing">MoSA: Mixture-of-Specialized-Agents for Cost-Efficient Long-Document Question Answering</a></td><td>Haseeb Ismail, Mert Karabiyik, Shayaan Memon</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1wADVi0UQm6czisN7EWjcfuasWZSlViM-/view?usp=sharing">Multi-Lane Retrieval-Augmented Generation for Pharmaceutical Regulatory Dossier Writing</a></td><td>Omar Ingi Halldorsson</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1C4gySk7Cv4k81NiGkIBU6tFmbDXHUFuu/view?usp=drive_link">MuTaP: Multi-Task Mutation Predictor via LoRA-Adapted ESM-2</a></td><td>Aya Aburous, Jad Bitar</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1tovOkZXR4tIO9Fo4-rn6X5PmY3AvyBtZ/view?usp=drive_link">NanoVQA</a></td><td>Ellen Xu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1PbVjf12lZhRG3LRsvXzz81cv_Ml_7Xlk/view?usp=drive_link">Non-Toxic Trash-Talking Fantasy Football</a></td><td>Andrew Dana Lawlor, Xander William Russell</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1xUK1r-dTEq7UBo7pj-b6aBF0MRXvnn6z/view?usp=sharing">On-Policy Context Distillation</a></td><td>Darynne Lee, Shizhe He, Simon Pritchard</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1AH1JRzu9QfeBBGnM6oY6KWPXa4cDKzjS/view?usp=sharing">Perceptual-Aware Spatial Scene Synthesis (PASSS)</a></td><td>Karan Singh Soin, Na Young Son</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/15Izvo-W26--FwJK-dc2ZQma_sFeIyk7K/view?usp=drive_link">Pinpointing Latent Planning in Language Models with Lightweight Mechanistic Methods</a></td><td>Harshvardhan Singh, Nick Rui, Nicole Ma</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1NWpdGwd6_TO-s3Kx9SXPj0pE8Mo1YjAU/view?usp=sharing">PocketSheet: Enhancing Test-Time Learning using Efficient Memory Augmentation in Small Language Models</a></td><td>Prabhjot Singh Rai, Sakthivel Sivaraman</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1fvLodRs0BzUA94a_5C0hhT3ffNUJeGWa/view?usp=sharing">Practical and Interpretable Unfair ToS Detection: Comparing Legal-Bert, Linear Lexical Models, and Editable trees</a></td><td>Basel AlKanjo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1dVqfVL_LLGoa4CkUIvdgx_aVyqOvkVpn/view?usp=drive_link">Practical Design Decisions Can Matter More Than Training Algorithm Choice: A Study of LLM-Based Rust Bug Repair</a></td><td>Ethan Charles Morgan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1kPMUsTnj4EpyLDsJiGNNDVVVM3CNpFjM/view?usp=drive_link">Precision Under Pressure: Pushing the Boundaries of the Accuracy-Efficiency Frontier in Question Answering with Mixture-of-Depths</a></td><td>Haoyue Yang, Jan Miroslaw Kopanski, Soha Sultan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1N-V0wHksHSzHkYDpUnFybXuXCEL_7yh6/view?usp=drive_link">Preference-Based Alignment of Code Generation for MCP Server Development</a></td><td>Kristjan Dagur Egilsson, Rami Ratl Mrad</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1I9khhgynzDPWrkMsUUE-JGZZhzfdFonC/view?usp=drive_link">Progressive Screenplay Narrative Understanding via Contrastive Learning</a></td><td>Luca Thomas Wheeler</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1OtLRIfesl9fUhTe5lygU0CCZ3laj-RhV/view?usp=drive_link">Quantized Pre-training for Small Mixture-of-Experts</a></td><td>Raghavendra Pranith Koppula</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1cWrCv_QY1ZAH3IlwyPMIvHyA49NhyMOc/view?usp=drive_link">RAG-Based LLM Supported by Clinically Structured Re-Ranking, RL-Tuned Retrieval, and Agentic Workflow for ED Triage Prediction</a></td><td>Charlotte Louise Kramer, Isha Arora, Nino Alex Triandafilidis</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/18JbLpCRd6yLzI1RRHb0o9N7z93wdv6ET/view?usp=drive_link">Rapping in Role: A Study of Persona Robustness in Large Language Models</a></td><td>Eunice Hyeyun Jung, Megan Ja</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1zkARphNHWceBrX-5nLR1aNA7UwGBG7Pt/view?usp=drive_link">Recursive Self-Improvement for Continual Adaptation in Code</a></td><td>Aaditya Vikram Nalawade, Chandra Suda, Ethan David Goodhart</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1aPdKoqkBLaJ8gD0P23vHJ8NsEmI3osEX/view?usp=drive_link">Reward Design for Medical Safety: Reducing Sycophancy via Truth-Weighted RLHF</a></td><td>Jillian Chang, Juli Huang, Michael Kuang Min Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1I7v6oknMBHzf9XWd6cVg60CJPuAohvj7/view?usp=drive_link">Scaling Test-Time Compute to Improve Formal Reasoning in Lean via Compiler Feedback</a></td><td>Adam Joseph Banks, Alexander Huang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1z9AtkuYo-901Q2eLyFBqR4BJFabKNLDm/view?usp=sharing">Self-Distillation for Discrete Flow Map Consistency</a></td><td>Suchir Agarwal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13IcNIBpHu1yB7j-_1sudxrDjJkBU2bwE/view?usp=sharing">Small Models Think Big: Toward Effective Memory Distillation for Small Co-Scientists</a></td><td>Jaanak Prashar, Renn Su, Summer Olivia Royal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1N2HZKNBWWmhiEPmWYr065rx8LrPIabAu/view">Structural Line Markers and Multi-Pass Reranking for GPT-2 Sonnet Generation</a></td><td>Aalaap S Hegde, Mudit Baid, Rakshit Kaushik</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1hTh86Bs20D92rpQU3Of9QqX32zSq9G8D/view?usp=sharing">SUMMEHRY: LLMs for Generating Temporal Patient Vignettes</a></td><td>Arlina Shen, Asmita Sood, Eashan Monga</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1cwQVi2ea_TJxRj-qF4f29Q3FleqqmzN9/view?usp=drive_link">Support-Aware Retrieval of Evidence Passages for Community Notes</a></td><td>Dorian Scott Gulley, Dyllan Han</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1hdBkEktCljkEFAoe9Z8WTKKj-F92sRuh/view?usp=sharing">SYMBRION: Symbol Context and Dream Ego Relations Across Lifelong Dream Series as a Tool for Psychoanalysis</a></td><td>Bobby Rohrkemper, Chia-Wei Cheng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ZZ-REn5Mx_ZaA2dOQxK56-kZk6Z2IK0U/view?usp=drive_link">Test Time Training for Sample-Efficient Practical Molecular Optimization</a></td><td>Aaron Chee-Hung Lee, Ishvi Mathai</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ZgFZvrKsLR8y1UGE96dQGhU0cpaiQsFQ/view?usp=drive_link">Test-Time Training on Binary Sub-Problems</a></td><td>Andrew Sung, Darrow Robert Hartman, Leo Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ysTrwt2BMOp51TKHqnNnJLEazBXPpJ00/view?usp=drive_link">The Efficiency Threshold: Few-Shot Prompting vs. LoRA</a></td><td>Abi Lopez, Daniel Joseph Grossman, Shreyas Chikkanayakanahalli Seshadri</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1zuk71MqsSW4_IQq9pK9NDzPNTRj3tfv8/view?usp=drive_link">The Feasibility of Token-Level Compute Allocation across Depth in Pretrained Transformers</a></td><td>Anjali Sreenivas, Yuchen Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1rynQlpGQaqgrBAKQT2VJf0Dog5HmsxOo/view?usp=drive_link">The Rosetta Probe: Cross-Lingual Syntactic Transfer in Monolingual English BERT</a></td><td>Ananya Niharika Navale</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1IUIN_NbXi1BrTqNiKG97Mdrq5nNZoq1R/view?usp=drive_link">Towards Robust Natural-Language Proof Verification</a></td><td>Slim Barkallah</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1iG2nPk_-tznWJohCS2C6MpHBHWDbZeh5/view?usp=sharing">TRACE: Tool-augmented Reasoning via Atomic Cheatsheet Editing</a></td><td>Arnold Tianyi Yang, Kyleen Liao, Roshen Sanjay Nair</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13tnElrYc4-ubFVbsF_sy6UwetPPWBhme/view">Understanding Mechanisms of Sycophancy in Multi-turn Interactions</a></td><td>Camila Blank</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1P4JESBj5hSTMtDjublyD6WHojH2E1tew/view?usp=drive_link">Understanding Value Embeddings in GPT-2 Training Speedruns</a></td><td>Arihan Varanasi, Markus Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1V-eXG68yC8VXe0AmUp6wThnT8MhA6PUk/view?usp=sharing">Verified Anchor Selection and Adaptive Curriculum for Dynamic Cheatsheet Memory</a></td><td>Mengqian Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1laPoglYuM5iTyTuqQUuHb0QYYIY7Qxov/view?usp=drive_link">Verified On-Policy Self-Distillation</a></td><td>Jack Li, Sophia Yinfan Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1AeuzLcvm6t4ZSlpFYPdv7_V_p_hQdmv_/view?usp=drive_link">Verifier-Guided Reasoning for Cryptic Crossword Clue Solving</a></td><td>Aarav Arora, Caleb Youngjae Whang Choe, Shamit R Surana</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Mf8bsB_nt6orD6drDKaL_2Aaxb4DZ3KC/view?usp=drive_link">Visceral Judgment: LLM Refusal through Affective State</a></td><td>Nicolas Kennedy</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1sFVPkY0YLhxLyUjfn-D4S5aBipSv9YNZ/view?usp=sharing">Vision-Language Model Router for Robotics</a></td><td>Jadelynn Kim Dao, Milan Ganai, Satvik Sharma</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Zg4lepccZfUX3nltyoiYHD6mzYeno-4u/view?usp=sharing">Where Reasoning Branches: How Preference Pair Construction Shapes DPO for Mathematical Reasoning</a></td><td>Duy Nguyen</td></tr>
+    </tbody>
+  </table>
+  <h2>Default Projects</h2>
+  <table class="table">
+    <colgroup>
+      <col style="width:60%">
+      <col style="width:40%">
+    </colgroup>
+    <tbody>
+      <tr class="active"><th>Project name</th><th>Authors</th></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1AJKaOE1Sd_FYSm7PUmiQ_Hr3JBHtXpPS/view?usp=sharing">A Study of SFT-DPO Interaction and LoRA vs Full Fine-Tuning in Small Language Models</a></td><td>Christy Yang, Yuming Feng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Duz7yR3nVvj5lhV2JdRWMcVUX28HOUoa/view?usp=sharing">Accelerated DPO Fine-tuning GPT-2 with Constructed Data</a></td><td>Jessie Ou, Weixin Yu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Laef75yBJxiepchqc4aptUHOSx3xpaub/view?usp=drive_link">Accelerating Attention for GPT-2 Using FLASHATTENTION, Longformer, and cosFORMER</a></td><td>Diego Sierra, Thomas Sarda, Tom-Eliot Jullien</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1QdtF2HEnIDvQz5lqNWDtm6x4P7dio8l1/view">AdamW The Last LLM-Bender: The Legend of LoRA</a></td><td>Ari Barbella-Blaha, Kieran Javier Barrett</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1PbsUK0rpszCCFkdxKmkBrRLpWMOKQsUz/view?usp=sharing">Adapting GPT-2 for Sentiment Analysis, Paraphrase Detection, and Sonnet Generation</a></td><td>Fiona Han, Samih Shaheen Qureshi, William Charles Rose</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1GNSyY2A7-DabZxirsF2orF8QYdxCjcNz/view?usp=sharing">Adapting GPT-2 Through Fine-Tuning Across NLP Tasks</a></td><td>Ritu Patil</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Wg67tL6GnKz2D1wCsjLgZL5FvMVvMuG_/view?usp=sharing">Adapting Pretrained GPT-2 via LoRA: How Much Fine-Tuning Do We Actually Need?</a></td><td>Zengmingyu He, Zerong Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1OoD36K9r2i64ljMGltXQ4MF-66iHAf2G/view?usp=drive_link">Adaptive Mixture-of-Heads: Routing Attention Heads in GPT-2 with Fixed and Dynamic Sparsity</a></td><td>David Stutz, Ryder Fried</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1W1YI8v6v0h7NxVpP3vkbSl8b88xtjf1e/view?usp=sharing">An Investigation of GPT-2 Applications and Training Improvements, and Exploring Multi-Token Entity Predictions</a></td><td>Ben Wengreen, Bhavya Ashish Shah, Jeffrey Meng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1HZICvgHHJQV5GaqbE9aZAzftKsd_0x3A/view?usp=drive_link">Applying Direct Preference Optimization to Improve GPT-2 Sonnet Generation</a></td><td>Aadhav Prabu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1a386BUpOIORNNkvZoUPAVwwJxkmwQJof/view?usp=drive_link">Beyond Full Fine-tuning: Finding the Limits of GPT-2 Efficient Adaptation</a></td><td>Alexander Huayi Zhong, Kaitlyn Angel Kwan, Songyu Han</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/17dg_LTOOwKa_Rn7QIwJh_Yu6zCksh4X7/view?usp=drive_link">Build GPT-2</a></td><td>Lucia Losada, Nicole Cortes</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/15EdKCWYKCu2Z-dmlcXEydv_UWrcfcFF2/view?usp=drive_link">Build GPT-2</a></td><td>Yuchan Guo, Yushi Feng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1nT4MpBMBrzUhLctFNh0bM0mpgPA8wn0e/view?usp=drive_link">Build GPT-2</a></td><td>Pengyu Mo, Shirley Yu, Yixiao Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1-lDCeiS0bEbmNrhTwUofioAl97zSutiw/view?usp=sharing">Building GPT-2</a></td><td>Suzannah Dalton Wistreich</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/191108iPKBEo_GNNjPsME84wnn4k_nW65/view?usp=sharing">Building GPT-2 and Perfecting Performance with Low-Rank Adaptation</a></td><td>Chenyu Song, Juntao Cheng, Mingyang Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1MdprVngstAHEEnLXatKr1IzOd6KCR2nW/view?usp=sharing">Building GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Yifan Guo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/148dX_htuQWWH7lNWqkie_byL_Mb1piVx/view">Building GPT-2 with Finetuning Optimizations</a></td><td>Ethan R Lee, Ethan Y Lu, Jingyu Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1CIKDtFF_6uKXTw6S0l5fZE1veWa1-EaH/view?usp=sharing">Building GPT-2: Revisiting a Key Milestone of NLP</a></td><td>Andy Tianqi Wang, Darren Chan, Derek Yan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1MtCHz5iCtttdNAMAe3pKBxo3qu-oB_NQ/view?usp=sharing">Circuit-Aware Analysis of LoRA Fine-Tuning: What Changes, Where, and Why?</a></td><td>Nathan Maidi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jxG9xilR5lqjduCma6Liu5RZN5e46qkg/view?usp=sharing">Cloze-Style Paraphrase Detection and Sonnet Generation with GPT-2: Exploring LoRA and Decoding Strategies</a></td><td>Nick Fursa</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Fo5sZhV8QsgGmsmhsHYcnzTixu8_35AX/view?usp=drive_link">Co-Adaptation in LoRA: Target Placement Effects and Inter-Module Interactions in GPT-2</a></td><td>Shekhar Sharma</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/18YA5lhh5AX2J-q2FD1bFUdJ5gNSch3Kd/view">Comparing ReFT and LoRA on Classification and Generative Tasks with GPT-2</a></td><td>Ryan Patrick Catullo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1QSztD3ShWSELirjuYv56fUHaiThAc2FA/view?usp=drive_link">Cost–Performance Tradeoffs for GPT-2 Fine-Tuning: A Case Study on Paraphrase and Sonnet Continuation</a></td><td>Ricardo Ruiz</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1pGNpJqHtRqn7N2EnOf7_gX8GasAWJd3O/view?usp=drive_link">CS 224N Default Project</a></td><td>Kayla Li, Yaojing Huang He</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13XiM5EYzQTi-BLmNEbgLdQj74OR5A475/view?usp=drive_link">Cutting Out the Middleman: Direct Preference Optimization for Paraphrase Detection and Sonnet Generation</a></td><td>Justin Yuankai Leong, William Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1dO6-2pd2Eki6O-kTVR4RaQY4498Khq3Q/view?usp=drive_link">Data Efficient Fine-Tuning and Alignment of GPT-2</a></td><td>Aryaman Gupta, Joseph Lee, Zeyuan Feng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1gZeX18ayyOWGPLZ3_UR-DTiQKi7QlrHL/view?usp=sharing">Default Final Project: Efficient Adaptiation of GPT-2 via LoRA</a></td><td>Pedro Gaspar Pires</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13xme8zHW1xPN2hAiQnz4GdcxBIb1bUWf/view?usp=sharing">Direct Preference Optimization for Constrained Generation and Classification in GPT-2</a></td><td>Jingxiong Zhao, Weining Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1f669g6MmqVhClb_ABGlynE3EvHG3xQeV/view?usp=sharing">Direct Preference Optimization for Improving Sonnet Generation</a></td><td>Gio Ty</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1-EVp65nVz5B-PsdaFsXxmFPupoCDWdmg/view?usp=sharing">Direct Preference Optimization: From Paraphrase Detection to Sonnet Generation</a></td><td>Florencio Paucar Sedano</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1_22MJciMpiIVrS4HQCg6OdINnoEKFKuv/view?usp=drive_link">Does the Optimizer Matter? LoRA vs Full Fine-Tuning in NLP</a></td><td>Andy Dimnaku</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1D9WXwI4ir6Ea5rb6-msJyzmGjc1T6h3X/view?usp=sharing">DoRA the Explorer</a></td><td>Cayden Gu, Imogen Lee</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1NecEyjIiCFZ0EchK9iYBgcjlaOZixtDd/view?usp=sharing">DoRA: Parameter-Efficient Fine-Tuning for GPT-2 on Cloze Paraphrase Detection and Sonnet Generation</a></td><td>Aniket Gupta, Anjani Pangal, Mallika Parulekar</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1JsMX52oaE6nU417teRref1h19Atg5JJG/view?usp=drive_link">DPO for Structural Sonnet Generation and
+Paraphrase Detection with GPT-2</a></td><td>Daniel Marcelo Mottesi, Diego Bustamante, Jason McLeod Amsler</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Ynj_c5vtnUSifFk7DcznTC_llS_oSmjW/view?usp=sharing">Effects of Quantization on GPT-2 Small</a></td><td>Isabella Lynne Jordan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1h7b47JeMTPyWEX3W51vzCbgcNI4FHT2u/view?usp=drive_link">Efficiency and Inference: A Comparative Study of PEFT and Full Fine-Tuning</a></td><td>Sanyam Gupta</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1gIl7dn4fYkZyGoqcY8mXhXoY8RlPIXbM/view?usp=sharing">Efficiency in GPT-2: Parameter Adaptation, Quantization, and Synthetic Data Augmentation</a></td><td>Abhinav Chinta, Ethan Hersch, Ryan D'Cunha</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/15t49xOHRtd_bIMigJBDhK_4IRuJgldK3/view?usp=drive_link">Efficiency–Performance Trade-offs in LoRA-family: Fine-Tuning Methods for GPT-2</a></td><td>Christine Li, Jason Yan, Justin Li</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1x91I4_m3s_kYP14gWxLAr152DIYAf9zC/view?usp=drive_link">Efficient Adaptation and Structure-Aware Post-Training of GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Brandon Michael Kunitzer, Koa Lanakila Chang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1EJhx8kT4kHUyQ2beXv2GMQu7rIDfHChq/view?usp=drive_link">Efficient Alignment Is All You Need</a></td><td>Lingbo Duan, Shatong Zhu, Yufei Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1L8tIGSYlH_l23WY7FBc-H8LrH9slGG8a/view?usp=sharing">Efficient Fine-Tuning and Alignment of GPT-2 for Downstream NLP Tasks</a></td><td>Adam Alhousiki, Kamal Mohammed ElMallah, Tommy Leong</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1JzmjLHOy_w18yKdZJwBNsglK_y78sZbW/view?usp=sharing">Efficient Fine-tuning of GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Jonathan You</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jj4WN4fH2kVHtr7LeZ2XsVxZKj-R2Wtk/view?usp=drive_link">Efficient Fine-Tuning of GPT-2 via Low-Rank Adaptation (LoRA)</a></td><td>Min Zhang, Shang Gao, Shang Gao</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1EITdHRLtnI6H9YaD2o1jeeBN6-ez9dY-/view?usp=sharing">Efficient Fine-Tuning of GPT-2: LoRA, Hyperparameter Search, and Scaling for Paraphrase Detection and Sonnet Generation</a></td><td>Brian Sha</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1skQfJCQP0Rtf53RCBE9R9EChu9m2TEjo/view">Efficient Steering and Preference Alignment: Applying LoReFT and DPO to a Custom GPT-2 Architecture</a></td><td>Haonan Zhu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Jnkw2SlJlMFOgP7cSlMj9p754fklENUn/view?usp=drive_link">Encoding Task Structure via Attention Biases and Adaptive Computation</a></td><td>Dario Gaitzi Soatto</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1pwBE0R8Png_moiITNM88X65-eJJL6yrM/view?usp=sharing">Enforcing Rigid Syntax: Using LoRA to Adapt GPT-2</a></td><td>Monami Dutta Gupta</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/13aUcJVLa5GIYXTaLzv7SLC_0GuA8vVGs/view?usp=drive_link">Enhanced Hybrid Search for LLM Hyperparamter Optimization</a></td><td>Aaron Michael Sequeira, Avery Graham Voss, CJ Indart</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/12XiTv71i6U9cVayPgK21aWaRCCdKpMW7/view?usp=sharing">Evaluating LoRA for Efficient GPT-2 Fine-Tuning</a></td><td>Raymond Ruimeng Llata, Vania Chow</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1amBW55C7ayeWiTi9ADsmx5VMv7YUsCZl/view?usp=sharing">Evaluating Low-Rank Adaptation and Nested Low-Rank Architectures for Paraphrase Detection and Sonnet Generation</a></td><td>Ian Yue-Ran Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1E41mgI7tBiqsb6FomMYBEJXCklXIs4Wu/view?usp=drive_link">Evaluating Low-Rank Representation Finetuning for GPT-2 Downstream Tasks</a></td><td>Alvin Ayuyo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1nka-XQczxHAcLEElfn5NljYTXrWrDbtE/view?usp=sharing">Evaluating Performance, Efficiency, and Memory Trade-offs in GPT-2 Attention Mechanisms</a></td><td>Devon Thomas Johnston Smith, Lily Annabelle Bailey</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1wmGyMSv4DVU6eL25KD-wJWQcOq15z1ns/view?usp=drive_link">Exploring decoding and efficiency strategies for GPT-2</a></td><td>Stephanie Stephanie Vezich Tamayo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1hgAmdQ2m5mktzuYNI8sYoNeStl5jfQ8a/view?usp=drive_link">Exploring LoRA Variants With GPT-2</a></td><td>George Danchen Song, Justin Choo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1mi9liL_WpNUUCtpJWN9UWZdtf_kGhLVW/view?usp=drive_link">Exploring Low-Rank Adaptation for Efficient GPT-2 Fine-Tuning</a></td><td>Andy Zhang, Yi Lu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/10KKYmGLBe1jTqRN5YRWG4z7vo0jbzELC/view?usp=sharing">Exploring Parameter-Efficient Fine-Tuning for Paraphrase Detection with GPT-2</a></td><td>Krisha K Chokshi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jBi3u2VPgi4NS4pmXZb7D3E5c9aJRQ_8/view?usp=drive_link">Extending GPT-2 for Informal and Slang Aware Language Understanding</a></td><td>Dhruv Darshan Naik, Ruby Hernandez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1FmXex1CNP9NMM6Sn84QNOVNCnwjborKU/view?usp=sharing">Fairness-Aware Fine-Tuning of GPT-2 for Paraphrase Detection</a></td><td>Deonna Owens</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1xmlpbQJQxZrdG2_WxUC3A75KMKZwpGuO/view?usp=sharing">Fine-tuning GPT-2 for Sentiment Analysis, Paraphrase</a></td><td>Liliana Carolina Santos-Deonizio</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1J4W7b9v58gVCJKYY3Q2Pdl0JrGpCA0T0/view?usp=drive_link">Fine-Tuning GPT-2 for Sentiment Analysis, Paraphrase Detection, and Sonnet Generation with Parameter-Efficient Adaptation</a></td><td>Carl Liu, Zikun Zhu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1D65CCiFxdQKmPb1TeWEXvY1IhcEt_vc0/view?usp=drive_link">Fine-Tuning GPT-2 for Sentiment Analysis, Paraphrase Detection, Sonnet Generation and Political Affiliation Detection</a></td><td>Anna Wu, Iris Zixiao Xu, Samantha Malowane Leventis</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1FBo9BvfUCuCC20QQ0upQGsTmK9Gv6YZf/view?usp=drive_link">Fine-Tuning GPT-2 for Sentiment, Paraphrase, and Sonnet Tasks</a></td><td>Walter Lopez Chavez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1oQoKogYL85Effj5oZW4zwj1DoMUhhVz9/view?usp=drive_link">Fine-tuning GPT-2 with LoRA</a></td><td>Manish Agarwal, Pierce Cailean Sayer Mullin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1fqxfGOBKotJOp2LX12rubCsKePgtNKhe/view?usp=drive_link">Fine-tuning GPT-2 with LoRA and DPO for Accurate Classification and Constrained Generation</a></td><td>Shaoxiong Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/17abn3dYR_DgIoUzdzgvjFF1l7VxBM2ni/view?usp=drive_link">Fine-Tuning GPT-2: A Playground for Discriminative and Generative Adaptation Tasks</a></td><td>Aditi Somayajula, Sahithi Ankireddy</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/10z59n1zmZNY6XH4n_3pHTqJj90TMrStz/view?usp=sharing">Fine-Tuning, Alignment, and Efficient Adaptation of GPT-2 for NLP Downstream Tasks</a></td><td>Ahmed Mohamed Hassan Khidre Elsherbiny, Izhan Hamza, Patrick Wang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Q6Eb9Ejp8538UgBk3icjnqcyMdKAZeG3/view?usp=sharing">FlashAttention-Enhanced GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Katie Liu, Norah Asemota, William Yang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1qGXHo8S6LzatnfjzfcIsNG_fw909v_Wz/view?usp=drive_link">From Detection to Generation: Fine-tuning Large GPT2 Models for Paraphrasing and Poetry</a></td><td>Anna Guo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1fuXq9natU2arO0jfl3J5KzlsIYF02Qbi/view?usp=drive_link">From-Scratch GPT-2 and Efficient Adaptation</a></td><td>Bryan Alexis Pineda, Michael James Nixon</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1yMp8pUQ0EwNQunhtM7APptw8ea-2qhMZ/view?usp=sharing">Full Fine-Tuning v. LoRA: Parameter-Efficient Adaption of GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Megha Bindiganavale, Rydham Goyal</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1QnHe6eA22mXQ4L2Yr8ya5FveWaqSWpr6/view?usp=sharing">GaLore: Gradient Low-Rank Projection</a></td><td>Chung-Suen Stephen Chan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1LochTTr3WNhrl3iISuoPLaT8cCp5sDqV/view?usp=sharing">GDPO for GPT-2</a></td><td>Ahmed Sherif Ahmed Elbakry Mohamed</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/154pEZ3qUrB1Tx7E4llZM0jXsUL5rHi3G/view?usp=sharing">GPT-2 Default Project with Attention-only LoRA for Paraphrase Detection</a></td><td>Yiqing Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/181U-jkKwmv4FKh3ddDCtDAXuUJ7RicDD/view?usp=drive_link">GPT-2 Implementation and Speedup</a></td><td>Alexia Huang, Qi Wu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/19B_SZPaVneX_rtfQQ3s6VRsJRb9TccRo/view?usp=drive_link">GPT-2 with LoRA Optimization</a></td><td>Illia Shkirko, Janhavi Purkar, Zhang Bai-han</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1cF37MNdJEZ9LYDp1p4RDnRwECm6kJC3Q/view?usp=sharing">GPT-2 with Varying Attention Mechanisms</a></td><td>Aneesh Akella</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/16oGQ6iDz0A_gbrbNyb_YvQrOG3KlVHqq/view?usp=drive_link">GPT2 Optimization with PEFT and DPO</a></td><td>Kiran Sun</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1RViAU1BfMcIwxtBApgudYACIQFdNDZiI/view?usp=drive_link">GRPOET-Rank: Group Relative Policy Optimization with External Text-Ranking</a></td><td>Eric Liang, Jamin Jia-Ming Xie, William Z Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1pNly8gig-XHGCwmjVt_UDHr6xVJ-I5PR/view?usp=sharing">Hardware-Aware Self-Attention for GPT-2: A FlashAttention-based Study</a></td><td>Siri Garudanagiri Virupaksha</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1fEpy1TIXI_GYx7qyvG-cGR1qcXRur6iP/view?usp=sharing">Implementing a GPT-2 Decoder for Text Generation, Classification, and Paraphrase Detection</a></td><td>Alma Oralia Minerva Cooper, Antra Nakhasi, Louis Weisdorf</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1efT1y-p5q1nWzlvPjYtgjPvRqy_iNDL6/view?usp=drive_link">Implementing and Extending GPT-2 for Multi-Task NLP Applications: A Parameter-Efficient Fine-Tuning Perspective</a></td><td>Isabel Li, Lianyu Yao, Yunjie Xu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1UNeprRXdQ5QLQ52y3TnQIwGruALR7rKD/view?usp=drive_link">Implementing and Fine-Tuning GPT2 for Sentiment Analysis, Paraphrase Detection, and Sonnet Generation</a></td><td>Zhenghui Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1PoYHBN4zHBNasMqWMofaYvXGnd_Bxz_1/view?usp=drive_link">Improving GPT-2 Fine-Tuning through Parameter-Efficient Adaptation and Preconditioned Optimization</a></td><td>Akhilesh Varadan Balasingam, Georgios Mikos</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1IBly-tyVFOiLfTmSHEGCouQ0hyDIHkEv/view?usp=drive_link">Improving GPT-2 Fine-Tuning with Direct Preference Optimization for Sonnet Generation and Paraphrase Detection</a></td><td>Anna Gutowska, Nicolas Bejar Arambula, Petru Cristian Budianu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/10jc58_fiVMpcxk3UPpJDFCF7ElaTJhLM/view?usp=drive_link">Improving GPT-2 with Reinforcement Learning from AI Feedback: Automated Judges for Aligned Sonnet Generation</a></td><td>Jason Meng, Shinnosuke Yagi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ZzQ6xvldqkiTTDi6ogrgmpUNW5IcaCNm/view?usp=drive_link">Improving Performance and Efficiency of GPT-2 on Sonnet Generation and Paraphrase Detection Tasks</a></td><td>Divya Bhojraj</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ojOgVCWmnmwBo1O06SNnnHxwrhPJ7Y-v/view?usp=drive_link">Investigating Structure Aware Decoding and Cloze Style Classification for Robust GPT 2 Fine Tuning</a></td><td>Anya Von Diessl</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Q4kw19wsL-EUwThLZnE5GdOS-5DrnTkf/view?usp=drive_link">KV Caching and Speculative Decoding at GPT-2 Scale: Acceptance, Cost Ratio, and the Limits of Speedup</a></td><td>Amulya Parthasarathy</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1qkhLQqPT45hgcCp0ngC1zedU5w967FAO/view?usp=sharing">Lather, Rise, Repeat: The Shampoo Optimizer</a></td><td>Ricky Javier Rios</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1kjyeSbhgoQ2JCSlQcz3K50AZqcLNDUY6/view?usp=sharing">Learning to Rhyme with Token-Weighted DPO</a></td><td>Fisher Marks</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1mXnFCY57jDMPaVD2FJGpUG2FeInbcN5C/view?usp=sharing">Leveraging GPT-2 for Multiple Downstream NLP Tasks: Classification and Generation</a></td><td>Davi Ferreira Veronese</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1n_PYhYaB2cXrlPtTZA4NBa83cBciBpbP/view?usp=drive_link">Longformer-Style Sparse Attention for GPT-2</a></td><td>Hoang D Nguyen, Peter Martin Alisky</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1sv0roHyvDRzGXC5PUDPETmKU-WKN1Jh9/view?usp=sharing">LoRA vs LoReFT: Parameter-Efficient Fine-Tuning of GPT-2</a></td><td>Allen Yuan, Andrew Wooyong Chung, Ryan Joonwon Suh</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1-Mwt5eOvzYafoA6e2VKuL4uP4jOvxYlx/view?usp=sharing">Lora-Enhanced GPT-2 with DPO for Sonnet Generation</a></td><td>Filip William Henriksson, Krish Maniar, Nicholas Simon Allen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1nDdlonP1ycrhUSzRq8pRUSQ87_0cD3OY/view?usp=drive_link">Low-Rank Adaptation and Preference Optimization for Accessible Multi-Task GPT-2 Fine-Tuning</a></td><td>Mahathi Mangipudi, Taylor Elizabeth Hamilton-Hankins, Tyler Kinh Ho</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Hx9GncSS7_zAmOPocePV-U_NH8FHddPf/view?usp=drive_link">Low-Rank Adaptation for Efficient GPT-2 Fine-Tuning: Evaluation Across Classification and Generation Tasks</a></td><td>Vivek Tiwari</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Xujb_UuOq8Ut2D4OYLCXyniaotVwPg9l/view?usp=sharing">Low-rank fine-tuning of the GPT-2 model</a></td><td>Rongge Yan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1rbQk4d4RgUMLqMKc6nHE12GjBTD0J-tJ/view?usp=drive_link">Memory-Efficient Transformer Attention via Tiled FlashAttention-style Implementation</a></td><td>Sagar Kapare</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Plwp8u6UKtc_NMd22PfnMnpu5DFXQEqw/view?usp=sharing">Metric-Aligned Sonnet Generation with LoRA and Self-Critical RL Fine-tuning</a></td><td>Timothy Yu, Xiang Wan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1oKgrAUW491GGAkyWf4Ep78c1QV2dtLwW/view?usp=drive_link">MiniGPT: Implementation, Fine-Tuning, and Extensions for Constrained Generation</a></td><td>Shiwei Que</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1879KD2fOI7RWftEGu-Jf9HmbQ9wA6BCf/view?usp=sharing">Modernizing GPT-2: Integrating Low-Rank Adaptation, FlashAttention, and Multi-Token Prediction for Efficient Sonnet Generation</a></td><td>Manan Sheth, Sanjay Dixit Bhuvanagiri</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1iIl7bPC2BZDljTUDVnA-2hrSVHhrGIf9/view?usp=sharing">Optimizing GPT-2 for Downstream Tasks: An Exploration of PEFT, Preference Optimization, and SMART</a></td><td>Anastasiya Masalava, Eva Casto, Michael Rybalkin</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/14wPleW9N8-814edBkqxXhuk7_YBDHbkw/view?usp=sharing">Parameter-Efficient Adaptation of GPT-2 Across Classification and Generation Tasks</a></td><td>Isaias Martinez, Kristine Ma, Varsha Saravanan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1iXhngbnHUOX3lI5x6jWjWWSeeN_Twn_-/view?usp=drive_link">Parameter-Efficient Adaptation of GPT-2 across Discriminative and Generative Tasks</a></td><td>Junran Jia, Xianya Fu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1gmW-sJjhdAn4gOqKMspfV2seJ4UXDwnF/view?usp=sharing">Parameter-Efficient Fine-Tuning for GPT-2: Comparing LoRA and ReFT on Paraphrase Detection</a></td><td>Matthias Jiro Walther, Ngoc Nguyen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1iSSNcjx-jkWvjOFDePV78F-FJyCpFtjI/view?usp=drive_link">Parameter-Efficient Fine-Tuning of GPT-2 for Classification and Text Generation</a></td><td>Ryan He</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ZazFnTtPGASfltJUFczLOclT_8mQkWQz/view?usp=drive_link">Parameter-Efficient Fine-Tuning of GPT-2 Using DoRA</a></td><td>Linika Goel, Mindy Kay Harkness</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1iHV_8_rbBWnBa7ktpM_G7IEAxxgLbywY/view?usp=sharing">Parameter-Efficient Fine-Tuning of GPT-2 using Low-Rank Adaptation (LoRA)</a></td><td>Chris Alexander Perez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1GUJFS-dXmiUNqU-VrnJc_Fjjvv2dz16u/view?usp=drive_link">Parameter-Efficient Fine-Tuning of GPT-2 with LoRA</a></td><td>Chloe Yuri Jeon, Erick Angelo Ramirez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1yBsdqojRTLI4tKqd_CFIu8eIla5JrKSi/view?usp=sharing">Parameter-Efficient Fine-Tuning of GPT-2 with LoRA: A Systematic Study of Rank, Scale, and Learning Rate</a></td><td>Cuiyuanxiu Chen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1hVbdS5XrE4RRAIBknIDBNceIBZq6t6Sq/view?usp=drive_link">Parameter-Efficient Fine-Tuning of GPT-2: Comparing LoRA, LoReFT, and Prefix Tuning Across Classification and Generation Tasks</a></td><td>Sally Wang, Zijian Luo</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1LADUQoKryOemuOwFnuVWwqa4YuVBlFfn/view">Parameter-efficient fine-tunings for Downstream Adaptation of GPT-2</a></td><td>Peiyu Li, Zefang Zhou</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ie-EE7LVhFo8RuAninUGvveUH0LpSPKT/view?usp=drive_link">Parameter-efficient Finetuning and Preference Optimization of GPT-2 for Downstream Tasks</a></td><td>Pankaj Rajak</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1zMaIyWB4F6rOhk7B0RPGHjFwprt2xokK/view?usp=sharing">Paraphrase Detection and Sonnet Generation using GPT-2</a></td><td>Dongyu Jia, Omar Walid Ayoub</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1g3zomSEpz3ELI2k-RDyBxnGplU6czJ1I/view?usp=sharing">Paraphrase Detection and Sonnet Generation with LoRA and DPO</a></td><td>Diya Bhattacharjee, Jaagat Prashar, Kyle Tianshi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ktuI8C3KtdYzWTlfFGx9ZGXjc0GfJYQO/view?usp=drive_link">Preference Optimization for Parameter-Efficient
+Multi-Task Learning of GPT-2</a></td><td>Jiecong Tan, Mark Yang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1bLgShbsqrv3CdnOpXka93ukBnTZyKQ-i/view?usp=sharing">Preference-Optimized GPT-2 for Cloze-Style Paraphrase Detection and Sonnet Generation via DPO with GPT-Scored Pairs</a></td><td>Andrew Samuel Park, Arun J Moorthy, Welton T Wang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jl2zF7p7gb7fLcuqvtNu5fxaDm5iZ7So/view?usp=drive_link">Preference-Tuning GPT-2 with LoRA and DPO for Classification and Poetry</a></td><td>Hiromichi Murakami, Yuliia Murakami</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1p046Y-8ruVTrrTlpm48COf88HUFRBFGq/view?usp=sharing">QLoRA Fine-Tuning for Reliable Structured Tool Calls with GPT-2</a></td><td>Jay Khemchandani</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1K82RinUwC_Ek4BqBpylhm07BJ_fI9U2_/view?usp=sharing">Quadapter: Adapter for GPT-2 Quantization</a></td><td>Ethan Cohen, Wesley Bian</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1vf4Nl5DFSNNmX07S1fLr3GjfddRnSyI9/view?usp=sharing">Quantization of GPT-2 for Running on Edge Devices</a></td><td>Gordy D Sun</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1231EgbjkzDzRKBMQyLup7G4JmWJrm5ZZ/view?usp=drive_link">Rank, Bits, and Data: Efficient GPT-2 Adaptation for Paraphrase Detection and Sonnet Generation</a></td><td>Kerui Lu, Silin Du</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1XzseLce2rEIht6j7oqrsXo3hTLbEiVzv/view?usp=sharing">Re-implementing GPT-2 for Classification, Paraphrase Detection, and Sonnet Generation</a></td><td>Saanvi Reddy Thummalapally, Shani Su</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1aGFE4tDq6QtgHaD6dAIiFd8K4yBC638W/view?usp=drive_link">Robust Fine-Tuning of GPT-2 with SMART Regularization, LoRA, and Enhanced Decoding for Downstream NLP Tasks</a></td><td>Jake Klosowski, Kevin Stephen, Alex E Wurm</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1EzMI8lHi3agi3wiXmqXoaWc7RFA3J8tj/view?usp=drive_link">Robust GPT-2 Fine-Tuning via LoRA and Smoothness-Inducing Regularization</a></td><td>Pooya Nabavi</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1vpX_d08ISpOzWQyD9xquHqN8W-mLr8WB/view?usp=drive_link">SADPOSS G: Structure-Aware Direct Preference Optimization for Shakespearean Sonnet Generation</a></td><td>Mario Felix Sumali</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1pd5dVrCb9Rf1hQmEIsSpfudoGSIpOqq0/view?usp=drive_link">Second-Order Optimization for GPT-2 Fine-Tuning: Exploring K-FAC for NLP Downstream Tasks</a></td><td>Isabella Kai He</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1vkELkaxpxZib0WajgF_iF4ozrCsZ0aH9/view?usp=drive_link">Sentiment Classification using GPT-2 Representations</a></td><td>Sahaj Saini</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1P8IXY6XlZdVYy2EVhNAMbjRxdPvc0yuE/view?usp=sharing">SMART Regularization and DPO for GPT-2 Sonnet Generation</a></td><td>Mac Broido</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1dmUNT-cI6HVfWw3lnX9F1qI2HwO3FP5A/view?usp=drive_link">SMART-GPT2: Adapting SMART-Style Regularization for Decoder-Only Fine-Tuning</a></td><td>Austin Ho</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1HTOW5xlTJPTbrHNIhTKR0zYqBaL7pYLs/view?usp=drive_link">SMART-GPT2: Adversarial Regularization for GPT-2 Fine-Tuning</a></td><td>Bahram Y Mohmand, Noah Sabbavarapu, Zihan Wang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1ZG6dFrBysozSoflnzMkTbluwDTAWaK_X/view?usp=sharing">SOAP and Sonnets: Improving the Optimization Efficiency of GPT-2</a></td><td>Kenna Zeng</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1UmXI40mLp8eXZb0yMIDLrou0snBXOVkl/view?usp=drive_link">Source, Relay, and Suppressor Heads in a Poetry Generation Circuit</a></td><td>Kai Wen, Shaoyi Zhang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1Awpafs3rwnqCLVxUuKb6IDTZ-dLNW21F/view?usp=sharing">Sparse ReFT</a></td><td>Jacob Daniel Householder</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jb5Dwnv_oKO_JTyvYewh9JHd4CNTrPFx/view?usp=drive_link">SPLoRA: Sonnet Generation and Paraphrase Detection with LoRA</a></td><td>Joseph Rabara Bailey, Maya Vendhan</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1HCz5V74TbNIFSGvtrnlKdzZhgx06BB2v/view?usp=drive_link">Streaming Sonnets: Efficient Generation with KV Caching and Quantization</a></td><td>Codey Codey Sun, Michael Yang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1s3NK95MicHU7F8asoj4c4Ut39ZoNhfvE/view?usp=drive_link">Style Steering of GPT-2 Sonnet Generation with DPO</a></td><td>Claudia Perez D'Arpino</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/181PkHbFEnmcEq5CKU0ip545FLZEPYcsi/view?usp=sharing">Task-Dependent Effects of Parameter-Efficient Fine-Tuning: A GPT-2-Based Study</a></td><td>Weiwei Wu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1j1OzGzjcIdTwj_mNewwrG_Urk1dnCr9R/view?usp=sharing">Task-Driven Fine-Tuning and Efficient Attention for GPT-2</a></td><td>Sixian Du, Susan Li, Yuzhou Bian</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1gimQ6Q6UoRCw8afbPyJCbgbcsxxfamoH/view?usp=sharing">Task-Specific Fine-Tuning Strategies for Improving GPT-2 Across Classification and Generative NLP Tasks</a></td><td>Austin Chen, Cheney Sang, Harris Alan Lee</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1jEFJUO_Y1tC1kmKxSv2XB3b7o01AyQXf/view?usp=sharing">Task-Specific GPT-2 Adaptation: Structured LoRA for Paraphrase Detection and DPO for Sonnet Generation</a></td><td>Puyang Du, Xijia Liu</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1aXggrpEDXHVWSK-D1bq-lqIb4MWMJ2ho/view?usp=sharing">TaskRank</a></td><td>Fabio Ibanez, Peter Jason Benitez</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1nDZnosXhnvuHb3cZQIi7xSfIZqM8oDXW/view?usp=sharing">Teaching LLMs to Forget Bad Data with Controlled Unlearning</a></td><td>Hanyu Yang</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/14G_kyXJGvpdKTA_VMcAOTK-u_-sqp2AZ/view?usp=drive_link">The LoRA(x)</a></td><td>Gerwin Delsocora Mateo, Ryan Da</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/17uMYnDAoyJVy20Z_WcHBglE4lSSa9jHA/view?usp=sharing">Title of your project</a></td><td>Arun Brian Morris Chhetri, Ian Luka Lasic-Ellis, Marcus Batt Kushner</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/17sSqs-R9V2aV_RKdw1dmzeKIjDKXrRLy/view?usp=sharing">Uncertainty-Aware Self-Training for Paraphrase Detection + Learned Reranking for Sonnet Generation</a></td><td>Alex M Michael, Luis Marc Botin-Sanz de Sautuola, Xander Coulter Hnasko</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/1SG2kQlNx8C2v--7bw8yR-XID7fMNDin9/view?usp=sharing">Weight Decomposition Matters: DoRA vs. LoRA for Small GPT-2 Task Adaptation</a></td><td>Svea Drekshagen</td></tr>
+      <tr><td><a href="https://drive.google.com/file/d/152l05joOATOSuBQEe9-o02U8GioRTlvt/view?usp=drive_link">Where Does LoRA Actually Help? Probing Layer-Wise Adaptation in GPT-2 for Paraphrase Detection and Sonnet Generation</a></td><td>Mona Anvarihosseinabad</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- jQuery and Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

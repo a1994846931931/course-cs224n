@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models">
+  <meta name="keywords" content="Multimodal, Large Language Model, sketch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NKDF32ZZ');</script>
+  <!-- End Google Tag Manager -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDF32ZZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yushi-hu.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://zeyofu.github.io/blink/">
+              BLINK
+            </a>
+            <a class="navbar-item" href="https://visual-program-distillation.github.io/">
+              Visual Program Distillation (VPD)
+            </a>
+            <a class="navbar-item" href="https://finegrainedrlhf.github.io/">
+              Fine-Grained RLHF
+            </a>
+            <a class="navbar-item" href="https://tifa-benchmark.github.io/">
+              TIFA
+            </a>
+            <a class="navbar-item" href="https://yushi-hu.github.io/promptcap_demo/">
+              PromptCap
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><img src="static/images/icon.png" alt="icon"
+                style="width:75px; transform: translateY(20%);"><span style="color: rgb(100, 138, 195);"><b>Visual
+                  Sketchpad</b></span>: <br> Sketching as a Visual Chain of Thought for Multimodal Language Models</h1>
+            <div class="is-size-5">
+              <span class="author-block">
+                <a href="https://yushi-hu.github.io/" style="color:#f68946;font-weight:normal;">Yushi
+                  Hu<sup>*</sup></a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://swj0419.github.io/" style="color:#f68946;font-weight:normal;">Weijia
+                  Shi<sup>*</sup></a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://zeyofu.github.io/" style="color:#008AD7;font-weight:normal;">Xingyu Fu</a><sup>3</sup>,
+              </span>
+              <br>
+              <span class="author-block">
+                <a href="https://www.cis.upenn.edu/~danroth/" style="color:#008AD7;font-weight:normal;">Dan
+                  Roth</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://people.ece.uw.edu/ostendorf/" style="color:#f68946;font-weight:normal;">Mari
+                  Ostendorf</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.cs.washington.edu/people/faculty/lsz"
+                  style="color:#f68946;font-weight:normal;">Luke
+                  Zettlemoyer</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://nasmith.github.io/" style="color:#f68946;font-weight:normal;">Noah A.
+                  Smith<sup>*</sup></a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://www.ranjaykrishna.com/" style="color:#f68946;font-weight:normal;">Ranjay
+                  Krishna<sup>*</sup></a><sup>1,2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <b style="color:#f68946; font-weight:normal">▶ </b>University of Washington
+              </span>
+              <span class="author-block">
+                <b style="color:#f68946; font-weight:normal">▶ </b>Allen Institute for AI
+              </span>
+              <span class="author-block">
+                <b style="color:#008AD7; font-weight:normal">▶ </b>University of Pennsylvania
+              </span>
+              <span class="author-block">
+                &nbsp;&nbsp;<sup>*</sup>Equal Contribution
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2406.09403" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2406.09403" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+                <!-- Video Link. -->
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/Yushi-Hu/VisualSketchpad"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <h2 class="title is-3">How does Sketchpad work?</h2> -->
+        <video id="teaser" autoplay muted loop playsinline height="60%" poster="./static/videos/teaser_web.png">
+          <source src="./static/images/sketchpad_video_1_720p.m4v" fetchpriority="high" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Humans draw to facilitate reasoning. Why not let multimodal LLMs do so? <br>
+          This video demonstrates how <span style="color: rgb(100, 138, 195);"><b>Visual
+              Sketchpad</b></span> works.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section is-light" style="background-color: #f0faff;">
+    <!-- Adjust the hex color code as needed for the desired shade of gray -->
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3 has-text-centered">How does Sketchpad work?</h2>
+        <img src="./static/images/teaser.jpg" alt="sketchpad teaser">
+        <h2 class="subtitle has-text-centered">
+          <b>Sketchpad equips GPT-4 with the ability to generate intermediate sketches to reason
+            over tasks. </b>
+        </h2>
+        <h2 class="subtitle has-text-justified">
+          Given a visual input and query, such as proving the angles of a triangle equal 180°,
+          Sketchpad enables the model to draw auxiliary lines which help solve the geometry problem.
+          For computer vision problems, Sketchpad can use vision specialists to sketch and facilitate visual reasoning.
+          For example, drawing a bounding box using <b>Grounding DINO</b>, or sketching a mask using <b>Segment
+            Anything</b>.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--/ Abstract. -->
+
+
+  <section class="section is-light" style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Humans draw to facilitate reasoning: we draw auxiliary lines when solving geometry problems; we mark and
+              circle when
+              reasoning on maps; we use sketches to amplify our ideas and relieve our limited-capacity working memory.
+              However, such actions are missing in current multimodal language models (LMs). Current chain-of-thought
+              and tool-use
+              paradigms only use text as intermediate reasoning steps.
+              In this work, we introduce sketchpad, a framework that gives multimodal LMs a visual sketchpad and tools
+              to draw on the
+              sketchpad. The LM conducts planning and reasoning according to the visual artifacts it has drawn.
+              Different from prior work, which uses text-to-image models to enable LMs to draw, sketchpad enables LMs to
+              draw with lines,
+              boxes, marks, etc., which is closer to human sketching and better facilitates reasoning. sketchpad can
+              also use specialist
+              vision models during the sketching process (e.g., draw bounding boxes with object detection models, draw
+              masks with
+              segmentation models), to further enhance visual perception and reasoning. We experiment on a wide range of
+              math tasks
+              (including geometry, functions, graph, chess) and complex visual reasoning tasks. sketchpad substantially
+              improves
+              performance on all tasks over strong base models with no sketching, yielding an average gain of 12.7% on
+              math tasks,
+              and 8.6% on vision tasks. GPT-4o with sketchpad sets a new state of the art on all tasks, including
+              V*Bench (80.3%),
+              BLINK spatial reasoning (83.9%), and visual correspondence (80.8%).
+            </p>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--/ Abstract. -->
+
+
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop is-centered has-text-centered">
+        <h2 class="title is-3">More Examples</h2>
+        <img src="static/images/website_examples_1.jpg">
+        <img src="static/images/website_examples_2.jpg">
+        <div class="content has-text-justified">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop is-centered has-text-centered">
+        <h2 class="title is-3">Effectiveness of Sketchpad</h2>
+        <img src="static/images/sketchpad_table1.jpg">
+        <img src="static/images/sketchpad_table2.jpg">
+        <div class="content has-text-justified">
+          Sketchpad substantially improves performance on all tasks over GPT-4-turbo and GPT-4o with no sketching.
+          Specifically, GPT-4o with sketchpad sets a new state of the art on all tasks.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="hero is-small">
+    <div class="container is-max-desktop content">
+      <br>
+      <h2 class="title is-3">Related Work</h2>
+      <ul>
+        <li> <a href="https://prior.allenai.org/projects/visprog">Visual Programming for Compositional Visual
+            Reasoning</a></li>
+        <li> <a href="https://viper.cs.columbia.edu/">ViperGPT: Visual Inference via Python Execution for
+            Reasoning</a></li>
+        <li> <a href="https://visual-program-distillation.github.io/">Visual Program Distillation:
+            Distilling Tools and Programmatic Reasoning into Vision-Language Models</a>
+        </li>
+        <li> <a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language
+            Models</a>
+        </li>
+        <li> <a href="https://github.com/microsoft/autogen">AutoGen</a>
+        </li>
+        <li> <a href="https://zeyofu.github.io/blink/">BLINK: Multimodal Large Language Models Can See but
+            Not Perceive</a>
+        </li>
+        <li> <a href="https://vstar-seal.github.io/">V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs</a>
+        </li>
+        <li> <a href="https://arxiv.org/abs/2401.06209v1">Eyes Wide Shut? Exploring the Visual Shortcomings of
+            Multimodal LLMs</a>
+        </li>
+        <li> <a href="https://isobench.github.io/">IsoBench: Benchmarking Multimodal Foundation Models on
+            Isomorphic Representations</a>
+        </li>
+        <li> <a href="https://arxiv.org/abs/2105.04165v3">Inter-GPS: Interpretable Geometry Problem Solving
+            with Formal Language and Symbolic Reasoning</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="section is-light" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{hu2024visual,
+title={Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models},
+author={Hu, Yushi and Shi, Weijia and Fu, Xingyu and Roth, Dan and Ostendorf, Mari and Zettlemoyer, Luke and Smith, Noah A and Krishna, Ranjay},
+journal={arXiv preprint arXiv:2406.09403},
+year={2024}
+}
+</code></pre>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
