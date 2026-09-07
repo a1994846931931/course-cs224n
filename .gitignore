@@ -3,6 +3,8 @@
 *.part
 *.tmp
 __MACOSX/
-.cursor/
+.cursor/*
+!.cursor/skills/
+!.cursor/skills/**
 .idea/
 .vscode/
